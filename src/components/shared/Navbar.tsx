@@ -12,7 +12,7 @@ type UserProps = {
 
 const Navbar = ({ session }: { session: UserProps | null }) => {
   return (
-    <div className="navbar bg-base-100  border-b  w-[90%] mx-auto">
+    <div className="navbar bg-base-100  border-b  w-[85%] mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,17 +33,17 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
           >
-            <li>
-              <Link href="/">Home</Link>
+            <li >
+              <Link  href="/">Home</Link>
             </li>
 
             <li>
               <Link href="/about">About Us</Link>
             </li>
             <li>
-              <Link href="/support">Support</Link>
+              <Link className="" href="/support">Support</Link>
             </li>
           </ul>
         </div>
@@ -52,7 +52,7 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-xl">
           <li>
             <Link href="/">Home</Link>
           </li>
