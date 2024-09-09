@@ -12,7 +12,7 @@ type UserProps = {
 
 const Navbar = ({ session }: { session: UserProps | null }) => {
   return (
-    <div className=" bg-slate-100 ">
+    <div className="">
       <div className="navbar rounded-sm z-50 sticky top-0 border-b  transition-all duration-300 w-[75%] mx-auto">
       <div className="navbar-start">
         <div className="dropdown">

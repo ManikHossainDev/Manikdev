@@ -19,7 +19,7 @@ export default async function RootLayout({
   const session = await getServerSession(authOptions)
   return (
     <html lang="en" data-theme="light">
-      <body className="bg-[#F6F9F9]">
+      <body className="bg-[#F5F2F2]">
         <Navbar session={session} />
         <div className="w-[75%] mx-auto ">{children}</div>
         <FooterPage/>
