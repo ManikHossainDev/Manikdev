@@ -12,7 +12,8 @@ type UserProps = {
 
 const Navbar = ({ session }: { session: UserProps | null }) => {
   return (
-    <div className="navbar bg-base-100  border-b  w-[85%] mx-auto">
+    <div className=" bg-slate-100 ">
+      <div className="navbar rounded-sm z-50 sticky top-0 border-b  transition-all duration-300 w-[75%] mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,10 +48,12 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
             </li>
           </ul>
         </div>
+
         <Link href="/" className="btn btn-ghost text-xl text-[#00BBA6]">
           Manik.
         </Link>
       </div>
+
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-xl">
           <li>
@@ -76,18 +79,19 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
       </div>
       <div className="navbar-end">
         {session?.user ? (
-          <button onClick={() => signOut()} className="btn btn-error btn-outline text-white rounded-full px-5">
+          <button onClick={() => signOut()} className="btn btn-error btn-outline text-xl text-white rounded-full px-5">
             Logout
           </button>
         ) : (
           <Link
             href="/login"
-            className="btn btn-accent btn-outline text-white rounded-full px-5"
+            className="btn text-xl btn-accent btn-outline text-white rounded-full px-5"
           >
             Login
           </Link>
         )}
       </div>
+    </div>
     </div>
   );
 };

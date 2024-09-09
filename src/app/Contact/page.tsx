@@ -4,7 +4,7 @@ import Link from "next/link";
 const ContactPage = () => {
   return (
     <div>
-      <div className="max-w-7xl md:mx-auto mb-12 py-10 mx-2">
+      <div className="max-w-7xl md:mx-auto pb-24 py-14 mx-2 ">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-24">
           {/* Left Section */}
           <div className="md:col-span-4">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const FooterPage = () => {
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-100  mx-auto">
       <div className="flex flex-col gap-x-5 items-center justify-between md:justify-between max-w-6xl md:mx-auto md:py-2 mx-2">
         {/* Logo Section */}
         <div>

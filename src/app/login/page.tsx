@@ -95,7 +95,7 @@ const LoginPage = () => {
           <p className="text-center">Or Sign Up Using</p>
           <div className="flex justify-center mb-10 mt-2">
             <button
-              className="btn btn-circle "
+              className="btn btn-circle mr-5"
               onClick={() =>
                 signIn("google", {
                   callbackUrl: "https://nextjs-custom-auth-client-mtszab0o8-programmer-maniks-projects.vercel.app/dashboard",
