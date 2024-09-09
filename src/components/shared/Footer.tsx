@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const FooterPage = () => {
   return (
@@ -6,7 +6,9 @@ const FooterPage = () => {
       <div className="flex flex-col gap-x-5 items-center justify-between md:justify-between max-w-6xl md:mx-auto md:py-2 mx-2">
         {/* Logo Section */}
         <div>
-          <h1 className="text-xl font-bold font-butler text-[#00BBA6]">Manik.</h1>
+          <h1 className="text-xl font-bold font-butler text-[#00BBA6]">
+            Manik.
+          </h1>
         </div>
 
         {/* Social Links */}
@@ -16,7 +18,7 @@ const FooterPage = () => {
             href="https://www.linkedin.com/in/devmanik/"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-primary-color p-3 rounded-md"
+            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-black-color p-3 rounded-md"
           >
             <svg
               stroke="currentColor"
@@ -36,7 +38,7 @@ const FooterPage = () => {
             href="https://x.com/ManikHossainDev"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-primary-color p-3 rounded-md"
+            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-black-color p-3 rounded-md"
           >
             <svg
               stroke="currentColor"
@@ -56,7 +58,7 @@ const FooterPage = () => {
             href="https://www.threads.net/@manik500282"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-primary-color p-3 rounded-md"
+            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-black-color p-3 rounded-md"
           >
             <svg
               stroke="currentColor"
@@ -76,7 +78,7 @@ const FooterPage = () => {
             href="https://github.com/Programmer-Manik"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-primary-color p-3 rounded-md"
+            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-black-color p-3 rounded-md"
           >
             <svg
               stroke="currentColor"
@@ -96,7 +98,7 @@ const FooterPage = () => {
             href="https://www.facebook.com/profile.php?id=100082862521278"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-primary-color p-3 rounded-md"
+            className="cursor-pointer text-black hover:text-primary-color border border-black hover:border-black-color p-3 rounded-md"
           >
             <svg
               stroke="currentColor"

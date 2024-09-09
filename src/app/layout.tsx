@@ -21,7 +21,7 @@ export default async function RootLayout({
     <html lang="en" data-theme="light">
       <body className="bg-[#F6F9F9]">
         <Navbar session={session} />
-        <div className="w-[75%]  mx-auto ">{children}</div>
+        <div className="w-[75%] mx-auto ">{children}</div>
         <FooterPage/>
       </body>
     </html>

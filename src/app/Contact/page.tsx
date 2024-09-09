@@ -200,7 +200,6 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-
           {/* Right Section - Form */}
           <div className="md:col-span-8">
             <div className="rounded-3xl p-5 md:p-10 bg-gray-100 bg-opacity-55 border border-black/25 relative">
