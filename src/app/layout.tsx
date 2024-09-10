@@ -20,8 +20,8 @@ export default async function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <body className="bg-[#F5F2F2]">
-        <Navbar session={session} />
-        <div className="w-[75%] mx-auto ">{children}</div>
+        <Navbar session={session}/>
+        <div className="w-[75%] min-h-screen mx-auto ">{children}</div>
         <FooterPage/>
       </body>
     </html>

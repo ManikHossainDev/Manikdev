@@ -13,7 +13,7 @@ type UserProps = {
 const Navbar = ({ session }: { session: UserProps | null }) => {
   return (
     <div className="">
-      <div className="navbar rounded-sm z-50 sticky top-0 border-b  transition-all duration-300 w-[75%] mx-auto">
+      <div className="navbar rounded-sm border-b z-50 sticky top-0 transition-all duration-300 w-[75%] mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

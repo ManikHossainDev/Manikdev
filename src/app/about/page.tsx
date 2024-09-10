@@ -137,7 +137,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="py-5">
-          <div className="rounded-[16px] py-10 px-6 bg-white  border border-black/25 relative group">
+          <div className="rounded-[16px] py-10 px-6 bg-white relative group">
             <div>
               <div className="grid md:grid-cols-12 grid-cols-9 gap-5">
                 {/* <!-- Javascript --> */}
@@ -413,7 +413,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className=" rounded-[16px]  bg-white py-16 md:py-[70px] px-6 border border-black/25  relative group">
+        <div className=" rounded-[16px]  bg-white py-16 md:py-[70px] px-6 relative group">
           <div className="absolute top-1.5 left-0">
             <Image
               alt="icon"

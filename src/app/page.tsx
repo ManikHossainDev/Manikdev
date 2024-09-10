@@ -5,9 +5,9 @@ import Link from "next/link";
 const HomePage = () => {
   return (
     <div className="px-5">
-      <div className="grid md:grid-cols-12 grid-cols-1 gap-5 pt-10  py-4 ">
-        <div className="md:col-span-6 col-span-1">
-          <div className="w-full h-full  bg-white rounded-[16px] relative pb-20 md:pb-0">
+      <div className="lg:grid md:grid-cols-12 grid-cols-1 gap-5 pt-5  py-4 ">
+        <div className="md:col-span-6 pb-2 col-span-1">
+          <div className="w-full h-full bg-white rounded-[16px] relative pb-20 md:pb-0">
             <div className="flex md:flex-col flex-col ml-5  space-y-3">
               <div className="flex flex-col items-start space-y-2">
                 <Image
@@ -22,14 +22,14 @@ const HomePage = () => {
                   <div className="h-1 w-10 bg-[#00BBA6] font-[400]" />
                   I'm Manik
                 </span>
-                <p className="text-3xl md:text-4xl font-semibold pt-1">
+                <p className="text-3xl md:text-4xl font-semibold  pt-1">
                   Full-Stack Developer.
                 </p>
-                <p className="text-md md:text-xl w-[250px] md:w-[520px] font-[400] text-[#8a8a8a]">
+                <p className="text-md md:text-xl text-balance  font-[400] text-[#8a8a8a]">
                   A MERN Stack & BackEnd developer with a passion for creating
                   dynamic and user-friendly applications. Let’s grow together!!
                 </p>
-                <div className="flex items-center gap-5 pt-5">
+                <div className="md:flex items-center gap-5 pt-5 space-y-2">
                   {/* Resume Button */}
                   <button className="flex items-center gap-1 bg-gray-100 transition-all ease-linear duration-150 rounded-full px-5 py-2 text-lg group">
                     <span className="group-hover:rotate-45 transform transition-all ease-linear duration-200">
@@ -77,8 +77,7 @@ const HomePage = () => {
                   </button>
                 </div>
               </div>
-
-              <div className="group md:pb-10 md:pt-14 py-5">
+              <div className="group md:pb-10 md:pt-10 py-5">
                 <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100">
                   <Link href="/about">
                     <div className="relative">
@@ -107,11 +106,11 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="md:col-span-6 col-span-1">
-          <div className="md:grid md:grid-cols-6 grid-cols-1 md:mt-0 mt-5 gap-5">
-            <div className="md:col-span-6 col-span-1">
-              <div className="grid md:grid-cols-6 grid-cols-1  gap-5">
-                <div className="md:col-span-3 col-span-1">
+        <div className="md:col-span-6  col-span-1">
+          <div className="md:grid grid-cols-1 md:grid-cols-6  md:mt-0 mt-5 gap-5">
+            <div className="col-span-1 md:col-span-6 ">
+              <div className="grid grid-cols-1 md:grid-cols-8   gap-5">
+                <div className="col-span-1  md:col-span-4 lg:col-span-4">
                   <Link href="/projects">
                     <div className="h-full w-full rounded-[16px] py-10 px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
@@ -157,16 +156,15 @@ const HomePage = () => {
                     </div>
                   </Link>
                 </div>
-
-                <div className="md:col-span-3 col-span-1">
+                <div className="col-span-1 md:col-span-4  lg:col-span-4">
                   <Link href="/Blogs">
                     <div className="h-full w-full rounded-[16px] py-10 px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
                         <Image
                           alt="work-imag"
                           loading="lazy"
-                          width="224"
-                          height="126"
+                          width="150"
+                          height="80"
                           decoding="async"
                           src="https://itznur07-personal-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fservice-cover-1.27f5431c.webp&w=256&q=75"
                           className="p-1"
@@ -205,10 +203,10 @@ const HomePage = () => {
                   </Link>
                 </div>
               </div>
-              <div className="grid md:grid-cols-6 grid-cols-1 mt-5  gap-5">
-                <div className="md:col-span-3 col-span-1">
-                  <div className="bg-white rounded-[16px]  md:py-14 px-7 relative group w-full h-full">
-                    <div className="flex justify-center rounded-3xl p-5 items-center space-x-3">
+              <div className="grid grid-cols-1 md:grid-cols-8   mt-3  gap-5">
+                <div className="col-span-1 mb-2 md:col-span-4  lg:col-span-5">
+                  <div className="py-10 group bg-white rounded-[16px]  md:py-10 px-6 relative group w-full h-full">
+                    <div className="flex justify-center  rounded-3xl md:p-5 p-1 items-center md:space-x-3 ">
                       <Link
                         href="https://www.linkedin.com/in/devmanik/"
                         passHref
@@ -305,9 +303,9 @@ const HomePage = () => {
                       </div>
                   </div>
                 </div>
-                <div className="md:col-span-3 col-span-1">
+                <div className="col-span-1 md:col-span-4  lg:col-span-3">
                   <Link href="#">
-                    <div className="h-full w-full rounded-[16px] py-10 px-6 bg-white relative group">
+                    <div className="h-full w-full rounded-[16px] py-10 md:py-10 px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
                         <Image
                           alt="work-imag"
@@ -324,7 +322,7 @@ const HomePage = () => {
                         <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
                         More about me
                         </p>
-                        <p className="text-2xl font-semibold">Credentials</p>
+                        <p className="lg:text-xl lg:text-left text-2xl font-semibold text-clip">Credentials</p>
                       </div>
                       <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
                         <Link href="/Credentials">
@@ -356,8 +354,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-12 grid-cols-1 gap-5 pb-5">
-        <div className="md:col-span-6 col-span-1 rounded-3xl py-16 md:py-[70px] px-6  bg-white   relative group">
+      <div className="grid lg:grid-cols-12 grid-cols-1 gap-5 pb-5">
+        <div className="lg:col-span-6 col-span-1 rounded-3xl py-16 md:py-[70px] px-6  bg-white   relative group">
           <div className="absolute top-1.5 left-0">
             <Image
               alt="icon"
@@ -405,11 +403,11 @@ const HomePage = () => {
             </button>
           </div>
         </div>
-        <div className="md:col-span-6 col-span-1 rounded-3xl py-10 px-6  bg-white  relative group">
-          <div className="rounded-[16px] py-10 px-6   relative group">
-            <div className="grid md:grid-cols-12 grid-cols-9 gap-5">
+        <div className="lg:col-span-6 col-span-1 rounded-3xl py-5 md:px-3 px-2  bg-white  relative group">
+          <div className="rounded-[16px] py-10  relative group">
+            <div className="grid md:grid-cols-12 grid-cols-9 gap-5 p-3">
               {/* <!-- Javascript --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1   cursor-pointer transition ease-linear duration-200 delay-100 font-medium  p-2 rounded-3xl border border-black  border-opacity-35 hover:border-opacity-100 ">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1   cursor-pointer transition ease-linear duration-200 delay-100 font-medium  p-2 rounded-3xl border border-black  border-opacity-35 hover:border-opacity-100 ">
                 <span className="text-md">
                   {/* <!-- Javascript Icon --> */}
                   <svg
@@ -429,7 +427,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- React.js --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- React Icon --> */}
                   <svg
@@ -449,7 +447,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- Next.js --> */}
-              <div className="md:col-span-3 col-span-4 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-4 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- Next.js Icon --> */}
                   <svg
@@ -469,7 +467,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- TypeScript --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- TypeScript Icon --> */}
                   <svg
@@ -488,7 +486,7 @@ const HomePage = () => {
                 <span>TypeScript</span>
               </div>
               {/* <!-- Tailwind CSS --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- Tailwind Icon --> */}
                   <svg
@@ -508,7 +506,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- MUI --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- MUI Icon --> */}
                   <svg
@@ -528,7 +526,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- Redux --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- Redux Icon --> */}
                   <svg
@@ -548,7 +546,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- RTK Query --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- RTK Query Icon --> */}
                   <svg
@@ -568,7 +566,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- Express.js --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- Express.js Icon --> */}
                   <svg
@@ -588,7 +586,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- MongoDB --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- MongoDB Icon --> */}
                   <svg
@@ -608,7 +606,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- PostgreSQL --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- PostgreSQL Icon --> */}
                   <svg
@@ -625,7 +623,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- Firebase --> */}
-              <div className="md:col-span-3 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- Firebase Icon --> */}
                   <svg
