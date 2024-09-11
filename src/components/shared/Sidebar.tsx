@@ -3,7 +3,7 @@ import Link from "next/link";
 const Sidebar = () => {
   return (
     <div>
-      <ul className="menu bg-base-200 min-h-screen rounded-box">
+      <ul className="menu bg-slate-200 p-5 min-h-screen rounded-box">
         <li>
           <Link href="/dashboard">
             <svg

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { getServerSession } from "next-auth";
 import Image from "next/image";
 export const metadata: Metadata = {
-  title: "Manik| User Info",
+  title: "Manik | User Info",
   description: "contacts information",
 };
 
@@ -11,7 +11,7 @@ const DashboardPage = async () => {
   const session = await getServerSession(authOptions);
   console.log(session);
   return (
-    <div>
+    <div >
       {session?.user && (
         <>
           <h1 className="text-4xl text-center mt-10">

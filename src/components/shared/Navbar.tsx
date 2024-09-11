@@ -1,5 +1,6 @@
 "use client"
 import { signOut } from "next-auth/react";
+import Image from "next/image";
 import Link from "next/link";
 
 type UserProps = {
@@ -78,10 +79,21 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
         </ul>
       </div>
       <div className="navbar-end">
+       
         {session?.user ? (
-          <button onClick={() => signOut()} className="btn btn-error btn-outline text-xl text-white rounded-full px-5">
-            Logout
-          </button>
+           <div className="inline-flex space-x-2">
+           <Image 
+             alt="icon"
+             width="50"
+             height="50"
+             className="mx-auto rounded-full border-[#00BBA6] text-white"
+             src={ session?.user?.image || "https://ibb.co/dKhNftn" } 
+             />
+            <button onClick={() => signOut()} className="btn btn-error btn-outline  md:text-xl border-[#00BBA6] text-white rounded-full px-2 md:px-5"> 
+              Logout
+           </button>
+           </div>
+          
         ) : (
           <Link
             href="/login"

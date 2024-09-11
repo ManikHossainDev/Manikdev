@@ -118,7 +118,7 @@ const LoginPage = () => {
               className="btn btn-circle"
               onClick={() =>
                 signIn("github", {
-                  callbackUrl: "https://nextjs-custom-auth-client-mtszab0o8-programmer-maniks-projects.vercel.app/dashboard",
+                  callbackUrl: "http://localhost:3000/dashboard",
                 })
               }
             >
