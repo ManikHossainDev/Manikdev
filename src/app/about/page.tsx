@@ -1,7 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-
+export const metadata: Metadata = {
+  title: "Manik | About",
+  description: "this is about to be published to the public domain",
+};
 const AboutPage = () => {
   return (
     <div className="grid md:grid-cols-12 gap-20 px-5 py-10">

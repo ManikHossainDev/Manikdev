@@ -1,5 +1,9 @@
+import { Metadata } from "next";
 import Link from "next/link";
-
+export const metadata: Metadata = {
+  title: "Manik | Contact",
+  description: "contacts information",
+};
 /* eslint-disable react/no-unescaped-entities */
 const ContactPage = () => {
   return (

@@ -1,6 +1,11 @@
 import { authOptions } from "@/utils/authOptions";
+import { Metadata } from "next";
 import { getServerSession } from "next-auth";
 import Image from "next/image";
+export const metadata: Metadata = {
+  title: "Manik| User Info",
+  description: "contacts information",
+};
 
 const DashboardPage = async () => {
   const session = await getServerSession(authOptions);

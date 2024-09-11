@@ -1,4 +1,9 @@
 "use client";
+// import { Metadata } from "next";
+// export const metadata: Metadata = {
+//   title: "Manik | Login",
+//   description: "login manager for contact information",
+// };
 import { loginUser } from "@/utils/actions/loginUser";
 import { access } from "fs";
 import { signIn } from "next-auth/react";

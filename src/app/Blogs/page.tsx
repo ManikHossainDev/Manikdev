@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Manik | Blogs",
+  description: "this is blogs to be published to the public domain",
+};
 const BlogsPage = () => {
   return (
     <div>
