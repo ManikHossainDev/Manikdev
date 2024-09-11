@@ -5,6 +5,7 @@ import Navbar from "@/components/shared/Navbar";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/utils/authOptions";
 import FooterPage from "@/components/shared/Footer";
+import Providers from "@/lib/Providers";
 
 export const metadata: Metadata = {
   title: "Manik | Home",
@@ -18,12 +19,14 @@ export default async function RootLayout({
 }>) {
   const session = await getServerSession(authOptions)
   return (
-    <html lang="en" data-theme="light">
+   <Providers>
+     <html lang="en" data-theme="light">
       <body className="bg-[#F5F2F2]">
         <Navbar session={session}/>
         <div className="w-[75%] min-h-screen mx-auto ">{children}</div>
         <FooterPage/>
       </body>
     </html>
+   </Providers>
   );
 }
