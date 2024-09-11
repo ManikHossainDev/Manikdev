@@ -5,7 +5,7 @@ import Navbar from "@/components/shared/Navbar";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/utils/authOptions";
 import FooterPage from "@/components/shared/Footer";
-import Providers from "@/lib/Providers";
+
 
 export const metadata: Metadata = {
   title: "Manik | Home",
