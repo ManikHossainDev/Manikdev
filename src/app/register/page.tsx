@@ -10,6 +10,7 @@ export type UserData = {
   username: string;
   email: string;
   password: string;
+  role: "user",
 };
 
 const RegisterPage = () => {
@@ -23,9 +24,9 @@ const RegisterPage = () => {
 
   const onSubmit = async (data: UserData) => {
     console.log(data);
-
     try {
       const res = await registerUser(data)
+      console.log(res);
       if(res.success){
         alert(res.message);
         router.push('/login')
@@ -35,7 +36,7 @@ const RegisterPage = () => {
       throw new Error(err.message);
     }
   };
-
+  
   return (
     <div className="my-10">
       <h1 className="text-center text-4xl mb-5">
