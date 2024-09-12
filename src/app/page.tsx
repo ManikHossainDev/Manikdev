@@ -26,12 +26,12 @@ const HomePage = () => {
                   Full-Stack Developer.
                 </p>
                 <p className="text-md md:text-xl text-balance  font-[400] text-[#8a8a8a]">
-                  A MERN Stack & BackEnd developer with a passion for creating
+                  A MERN & PERN Stack Developer with a passion for creating
                   dynamic and user-friendly applications. Let’s grow together!!
                 </p>
                 <div className="md:flex items-center gap-5 pt-5 space-y-2">
                   {/* Resume Button */}
-                  <button className="flex items-center gap-1 bg-gray-100 transition-all ease-linear duration-150 rounded-full px-5 py-2 text-lg group">
+                  <button className="flex items-center gap-1 bg-slate-100 transition-all ease-linear duration-150 rounded-full px-5 py-2 text-lg group">
                     <span className="group-hover:rotate-45 transform transition-all ease-linear duration-200">
                       <svg
                         stroke="currentColor"
@@ -46,7 +46,7 @@ const HomePage = () => {
                       </svg>
                     </span>
                     <Link
-                      href="https://drive.google.com/file/d/1fWbeatT5weiC63VvqMKnnHbij33yZ2qa/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1a8vMSUTFnmM2HpjSAPkiJRxMDntR8C1y/view?usp=sharing"
                       passHref
                     >
                       Resume
@@ -55,7 +55,7 @@ const HomePage = () => {
 
                   {/* Let's Meet Button */}
                   <button className="flex items-center gap-3 transform transition-all ease-linear duration-200 hover:bg-[#7de4b9] hover:text-black bg-[#00BBA6] rounded-full px-5 py-2 text-white text-lg group">
-                    <Link href="https://calendly.com/itznur07/30min" passHref>
+                    <Link href="https://calendly.com/manikdev/30min" passHref>
                       <span className="flex items-center gap-3">
                         <span className="text-white group-hover:text-black transform transition-all ease-linear duration-200">
                           <svg
@@ -242,18 +242,35 @@ const HomePage = () => {
                         </div>
                       </Link>
 
-                      <Link href="https://www.threads.net/@manik500282" passHref>
-                        <div className="p-3 rounded-[12px] hover:border-primary-color cursor-pointer transition ease-linear duration-200 delay-100 font-medium text-white bg-[#EE4A51]">
+                      <Link
+                        href="https://leetcode.com/u/MdManikHossain"
+                        passHref
+                      >
+                        <div className="p-3 rounded-[12px] hover:border-primary-color cursor-pointer transition ease-linear duration-200 delay-100 font-medium bg-[#2d97ee]">
                           <svg
-                            stroke="currentColor"
-                            fill="currentColor"
-                            stroke-width="0"
-                            viewBox="0 0 448 512"
-                            height="20"
-                            width="20"
+                            width="25"
+                            height="25"
+                            viewBox="0 0 95 111"
+                            fill="none"
                             xmlns="http://www.w3.org/2000/svg"
+                            className="h-full w-auto max-w-none"
                           >
-                            <path d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"></path>
+                            <path
+                              d="M68.0063 83.0664C70.5 80.5764 74.5366 80.5829 77.0223 83.0809C79.508 85.579 79.5015 89.6226 77.0078 92.1127L65.9346 103.17C55.7187 113.371 39.06 113.519 28.6718 103.513C28.6117 103.456 23.9861 98.9201 8.72653 83.957C-1.42528 74.0029 -2.43665 58.0749 7.11648 47.8464L24.9282 28.7745C34.4095 18.6219 51.887 17.5122 62.7275 26.2789L78.9048 39.362C81.6444 41.5776 82.0723 45.5985 79.8606 48.3429C77.6488 51.0873 73.635 51.5159 70.8954 49.3003L54.7182 36.2173C49.0488 31.6325 39.1314 32.2622 34.2394 37.5006L16.4274 56.5727C11.7767 61.5522 12.2861 69.574 17.6456 74.8292C28.851 85.8169 37.4869 94.2846 37.4969 94.2942C42.8977 99.496 51.6304 99.4184 56.9331 94.1234L68.0063 83.0664Z"
+                              fill="#FFA116"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M41.1067 72.0014C37.5858 72.0014 34.7314 69.1421 34.7314 65.615C34.7314 62.0879 37.5858 59.2286 41.1067 59.2286H88.1245C91.6454 59.2286 94.4997 62.0879 94.4997 65.615C94.4997 69.1421 91.6454 72.0014 88.1245 72.0014H41.1067Z"
+                              fill="#B3B3B3"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M49.9118 2.02335C52.3173 -0.55232 56.3517 -0.686894 58.9228 1.72277C61.494 4.13244 61.6284 8.17385 59.2229 10.7495L16.4276 56.5729C11.7768 61.552 12.2861 69.5738 17.6453 74.8292L37.4088 94.2091C39.9249 96.6764 39.968 100.72 37.505 103.24C35.042 105.761 31.0056 105.804 28.4895 103.337L8.72593 83.9567C-1.42529 74.0021 -2.43665 58.0741 7.1169 47.8463L49.9118 2.02335Z"
+                              fill="black"
+                            ></path>
                           </svg>
                         </div>
                       </Link>
@@ -274,33 +291,33 @@ const HomePage = () => {
                       </Link>
                     </div>
                     <div className="py-10">
-                        <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
+                      <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
                         Stay with me
-                        </p>
-                        <p className="text-2xl font-semibold">Profiles</p>
-                      </div>
-                      <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                        <Link href="/projects">
-                          <div className="flex items-center justify-center w-16 h-8 rounded-[16px] border border-black transition-all ease-linear duration-200">
-                            <span className="flex items-center justify-center text-black group-hover:rotate-45 transition-all ease-linear duration-200">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth="0"
-                                viewBox="0 0 24 24"
-                                height="16"
-                                width="16"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path>
-                              </svg>
-                            </span>
-                            <span className="text-black font-[400] text-sm">
-                              View
-                            </span>
-                          </div>
-                        </Link>
-                      </div>
+                      </p>
+                      <p className="text-2xl font-semibold">Profiles</p>
+                    </div>
+                    <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
+                      <Link href="/projects">
+                        <div className="flex items-center justify-center w-16 h-8 rounded-[16px] border border-black transition-all ease-linear duration-200">
+                          <span className="flex items-center justify-center text-black group-hover:rotate-45 transition-all ease-linear duration-200">
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              strokeWidth="0"
+                              viewBox="0 0 24 24"
+                              height="16"
+                              width="16"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path>
+                            </svg>
+                          </span>
+                          <span className="text-black font-[400] text-sm">
+                            View
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 <div className="col-span-1 md:col-span-4  lg:col-span-3">
@@ -320,9 +337,11 @@ const HomePage = () => {
                       </div>
                       <div>
                         <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
-                        More about me
+                          More about me
                         </p>
-                        <p className="lg:text-xl lg:text-left text-2xl font-semibold text-clip">Credentials</p>
+                        <p className="lg:text-xl lg:text-left text-2xl font-semibold text-clip">
+                          Credentials
+                        </p>
                       </div>
                       <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
                         <Link href="/Credentials">

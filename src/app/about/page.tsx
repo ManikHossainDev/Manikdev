@@ -18,7 +18,7 @@ const AboutPage = () => {
               width={500}
               height={500}
               className="rounded-3xl"
-              src="https://media.licdn.com/dms/image/v2/D5603AQFZkrwrR8n5Eg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719043391549?e=1731542400&v=beta&t=lIsNhrc3OwccLxh4ylvJ7Zz599TBMuvY8tvztXjx0qc"
+              src="https://pbs.twimg.com/profile_images/1834214792417923072/3fxHzXGX_400x400.jpg"
             />
           </div>
           <div className="text-3xl text-center font-semibold mt-4">
