@@ -19,11 +19,11 @@ export default function ProjectDetailsPage({ params: { projectId } }: TProps) {
 
   return (
     <main className="container flex flex-col-reverse gap-12 py-6 lg:flex-row">
-      <section className="w-full">
-        <h1 className="mb-4 text-2xl font-semibold">{name}</h1>
-        <Parsed className="text-neutral-300" data={description} />
+      <section className="w-full bg-white p-5 rounded-md">
+        <h1 className="mb-4 text-2xl font-semibold text-black">{name}</h1>
+        <Parsed className="text-black" data={description} />
       </section>
-      <section className="w-full">
+      <section className="w-full bg-white p-5 rounded-md">
         <Image
           width={600}
           height={600}
@@ -34,7 +34,7 @@ export default function ProjectDetailsPage({ params: { projectId } }: TProps) {
         <div className="mt-6 flex flex-wrap gap-3">
           {technologies.map((technology) => (
             <span
-              className="flex-1 whitespace-nowrap rounded-full bg-neutral-600 px-3 py-1 text-center text-xs font-semibold"
+              className="flex-1 whitespace-nowrap rounded-md bg-slate-500 px-3 py-1 text-center text-xs font-semibold"
               key={technology}
             >
               {technology}

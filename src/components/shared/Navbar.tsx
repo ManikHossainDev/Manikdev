@@ -62,7 +62,7 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
           </li>
 
           <li>
-            <Link href="/about">About Us</Link>
+            <Link href="/about">AboutUs</Link>
           </li>
           <li>
           <Link href="/Projects">Projects</Link>

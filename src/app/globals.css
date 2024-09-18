@@ -51,7 +51,7 @@ body {
 }
 
 .hero-img {
-  box-shadow: 0px 0px 60px 5px #a1dbc4;
+  box-shadow: 0px 0px 10px 3px #a1dbc4;
 }
 
 .hero-img:hover {

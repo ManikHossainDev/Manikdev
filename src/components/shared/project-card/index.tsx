@@ -18,7 +18,7 @@ export function ProjectCard(project: TProject) {
       <div className="mt-6 flex flex-wrap gap-3">
         {technologies.map((technology) => (
           <span
-            className="flex-1 whitespace-nowrap rounded-full bg-neutral-600 px-3 py-1 text-center text-xs font-semibold"
+            className="flex-1 whitespace-nowrap rounded-md bg-slate-200 px-3 py-1  text-center text-xs font-semibold"
             key={technology}
           >
             {technology}
@@ -31,7 +31,7 @@ export function ProjectCard(project: TProject) {
 
       <div
         dangerouslySetInnerHTML={{ __html: description }}
-        className="mt-6 line-clamp-3 text-justify text-sm text-white/70"
+        className="mt-6 line-clamp-3 text-justify text-sm text-gray-500"
       />
       <div className="mt-8 flex flex-row flex-wrap items-center justify-end gap-6">
         <Link className="flex-1" href={links.client} target="_blank">

@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Typewriter } from "@/components/Typewriter";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,26 +24,41 @@ const HomePage = () => {
                   I'm Manik
                 </span>
                 <p className="text-3xl md:text-4xl font-semibold  pt-1">
-                  Full-Stack Developer.
+                  <Typewriter />
                 </p>
                 <p className="text-md md:text-xl text-balance  font-[400] text-[#8a8a8a]">
                   A MERN & PERN Stack Developer with a passion for creating
                   dynamic and user-friendly applications. Let’s grow together!!
                 </p>
-                <div className="md:flex items-center gap-5 pt-5 space-y-2">
+                <div className="md:flex items-center gap-5 space-y-2">
                   {/* Resume Button */}
-                  <button className="flex items-center gap-1 bg-slate-100 transition-all ease-linear duration-150 rounded-full px-5 py-2 text-lg group">
-                    <span className="group-hover:rotate-45 transform transition-all ease-linear duration-200">
+                  <button className="flex items-center gap-1 bg-slate-300 hover:bg-slate-100 hover:text-[#00BBA6] transition-all ease-linear duration-150 rounded-md px-3 py-2 text-lg group">
+                    <span className=" group-hover:rotate-45 transform transition-all ease-linear duration-200">
                       <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 24 24"
-                        height="20"
-                        width="20"
+                        fill="#00BBA6"
+                        height="25px"
+                        width="25px"
+                        version="1.1"
                         xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                        enableBackground="new 0 0 512 512"
+                        stroke="#00BBA6"
                       >
-                        <path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path>
+                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <g>
+                              <path d="m251.6,185.7c-36.9,0-67,31.5-67,70.3 0,38.7 30,70.3 67,70.3 36.9,0 67-31.5 67-70.3 0-38.7-30.1-70.3-67-70.3z"></path>
+                              <path d="m251.6,367.1c-59.4,0-107.8-49.8-107.8-111.1 0-61.3 48.4-111.1 107.8-111.1s107.8,49.8 107.8,111.1c0,61.3-48.4,111.1-107.8,111.1zm246.3-121.9c-63.8-102.4-149.8-158.8-241.9-158.8-92.1,0-178.1,56.4-241.9,158.8-4.1,6.6-4.1,15 0,21.6 63.8,102.4 149.8,158.8 241.9,158.8 92.1,0 178-56.4 241.9-158.8 4.1-6.6 4.1-15 0-21.6z"></path>
+                            </g>
+                          </g>
+                        </g>
                       </svg>
                     </span>
                     <Link
@@ -54,7 +70,7 @@ const HomePage = () => {
                   </button>
 
                   {/* Let's Meet Button */}
-                  <button className="flex items-center gap-3 transform transition-all ease-linear duration-200 hover:bg-[#7de4b9] hover:text-black bg-[#00BBA6] rounded-full px-5 py-2 text-white text-lg group">
+                  <button className="flex items-center gap-3 transform transition-all ease-linear duration-200 hover:bg-[#7de4b9] hover:text-black bg-[#00BBA6] rounded-md px-3 py-2 text-white text-lg group">
                     <Link href="https://calendly.com/manikdev/30min" passHref>
                       <span className="flex items-center gap-3">
                         <span className="text-white group-hover:text-black transform transition-all ease-linear duration-200">
@@ -339,7 +355,7 @@ const HomePage = () => {
                         <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
                           More about me
                         </p>
-                        <p className="lg:text-xl lg:text-left text-2xl font-semibold text-clip">
+                        <p className="text-base md:text-lg lg:text-xl font-semibold text-clip">
                           Credentials
                         </p>
                       </div>
@@ -505,7 +521,7 @@ const HomePage = () => {
                 <span>TypeScript</span>
               </div>
               {/* <!-- Tailwind CSS --> */}
-              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- Tailwind Icon --> */}
                   <svg
@@ -525,7 +541,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- MUI --> */}
-              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- MUI Icon --> */}
                   <svg
@@ -545,7 +561,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- Redux --> */}
-              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- Redux Icon --> */}
                   <svg
@@ -565,7 +581,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- RTK Query --> */}
-              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- RTK Query Icon --> */}
                   <svg
@@ -585,7 +601,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- Express.js --> */}
-              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- Express.js Icon --> */}
                   <svg
@@ -605,7 +621,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- MongoDB --> */}
-              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- MongoDB Icon --> */}
                   <svg
@@ -625,7 +641,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- PostgreSQL --> */}
-              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- PostgreSQL Icon --> */}
                   <svg
@@ -642,7 +658,7 @@ const HomePage = () => {
               </div>
 
               {/* <!-- Firebase --> */}
-              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-primary border-opacity-35 hover:border-opacity-100">
+              <div className="md:col-span-3 lg:col-span-4 col-span-6 flex items-center space-x-1 cursor-pointer transition ease-linear duration-200 delay-100 font-medium p-2 rounded-3xl border border-black border-opacity-35 hover:border-opacity-100">
                 <span className="text-md">
                   {/* <!-- Firebase Icon --> */}
                   <svg

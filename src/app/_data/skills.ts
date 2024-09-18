@@ -121,7 +121,7 @@ const tools: TSkill[] = [
   },
   {
     _id: 'TS3',
-    name: 'Linux',
+    name: 'Windows',
     status: 'INTERMEDIATE',
     icon: 'DiLinux',
   },
