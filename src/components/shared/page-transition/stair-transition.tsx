@@ -24,7 +24,7 @@ export function StairTransition() {
   const pathName = usePathname();
   return (
     <AnimatePresence mode="wait">
-      <div key={pathName}>
+      <div   key={pathName}>
         <div className="pointer-events-none fixed left-0 right-0 top-0 z-50 flex h-screen w-screen">
           {[...Array(15)].map((_, index) => (
             <motion.div

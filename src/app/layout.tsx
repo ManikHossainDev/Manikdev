@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from 'next/font/google';
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import { getServerSession } from "next-auth";
@@ -9,8 +9,8 @@ import { cn } from "@/utils/utils";
 
 
 const font = JetBrains_Mono({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -26,9 +26,16 @@ export default async function RootLayout({
   const session = await getServerSession(authOptions);
   return (
     <html lang="en" data-theme="light">
-      <body className={cn(font.className, 'flex min-h-screen flex-col bg-[#F5F2F2]')}>
+      <body
+        className={cn(
+          font.className,
+          "flex min-h-screen flex-col bg-[#F5F2F2]"
+        )}
+      >
         <Navbar session={session} />
-        <div className="w-[75%]  mx-auto">{children}</div>
+        <div className=" w-[75%] mx-auto">
+          {children}
+        </div>
         <FooterPage />
       </body>
     </html>

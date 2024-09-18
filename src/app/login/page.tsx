@@ -92,7 +92,7 @@ const LoginPage = () => {
             </div>
             <p className="text-center">
               Don&apos;t have an account?{" "}
-              <Link className="text-accent" href="/register">
+              <Link className="text-accent text-green-500" href="/register">
                 Create an account
               </Link>
             </p>
@@ -129,21 +129,6 @@ const LoginPage = () => {
                 alt="github logo"
               />
             </button>
-            {/* <button
-              className="btn btn-circle"
-              onClick={() =>
-                signIn("facebook", {
-                  callbackUrl: "https://manikdev.vercel.app/dashboard",
-                })
-              }
-            >
-              <Image
-                src="https://1000logos.net/wp-content/uploads/2017/02/Facebook-Logosu.png"
-                width={35}
-                height={35}
-                alt="facebook logo"
-              />
-            </button> */}
           </div>
         </div>
       </div>

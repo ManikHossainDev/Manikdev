@@ -1,11 +1,13 @@
 import { Metadata } from "next";
 import Link from "next/link";
+
 export const metadata: Metadata = {
   title: "Manik | Contact",
   description: "contacts information",
 };
 /* eslint-disable react/no-unescaped-entities */
 const ContactPage = () => {
+ 
   return (
     <div>
       <div className="max-w-7xl md:mx-auto pb-24 py-14 mx-2 ">
