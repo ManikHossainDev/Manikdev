@@ -103,7 +103,7 @@ const LoginPage = () => {
               className="btn btn-circle "
               onClick={() =>
                 signIn("google", {
-                  callbackUrl: "https://nextjs-custom-auth-client.vercel.app/dashboard",
+                  callbackUrl: "https://manikdev.vercel.app/dashboard",
                 })
               }
             >
@@ -118,7 +118,7 @@ const LoginPage = () => {
               className="btn btn-circle mx-5"
               onClick={() =>
                 signIn("github", {
-                  callbackUrl: "https://nextjs-custom-auth-client.vercel.app/dashboard",
+                  callbackUrl: "https://manikdev.vercel.app/dashboard",
                 })
               }
             >
@@ -129,11 +129,11 @@ const LoginPage = () => {
                 alt="github logo"
               />
             </button>
-            <button
+            {/* <button
               className="btn btn-circle"
               onClick={() =>
                 signIn("facebook", {
-                  callbackUrl: "https://nextjs-custom-auth-client.vercel.app/dashboard",
+                  callbackUrl: "https://manikdev.vercel.app/dashboard",
                 })
               }
             >
@@ -143,7 +143,7 @@ const LoginPage = () => {
                 height={35}
                 alt="facebook logo"
               />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

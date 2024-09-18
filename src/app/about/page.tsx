@@ -17,7 +17,7 @@ const AboutPage = () => {
               alt="personimage"
               width={500}
               height={500}
-              className="rounded-3xl"
+              className="rounded-3xl hero-img  transition"
               src="https://pbs.twimg.com/profile_images/1834214792417923072/3fxHzXGX_400x400.jpg"
             />
           </div>
