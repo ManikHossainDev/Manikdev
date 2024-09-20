@@ -176,7 +176,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="md:col-span-8">
-        <div className="rounded-[16px] py-10 px-6 bg-white" >
+        <div className="rounded-[16px] py-8 px-6 bg-white" >
           <h1 className="text-3xl font-[700] font-butler">About me</h1>
           <div className="mt-5">
             <p className="md:text-lg font-lato">
