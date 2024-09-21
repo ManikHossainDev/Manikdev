@@ -5,7 +5,9 @@ import { skills } from "@/app/_data";
 export function Skills() {
   return (
     <>
+     
       <div className="bg-white rounded-[16px]  p-4 mb-3">
+        <p className="text-3xl font-[700] font-butler text-center">Skills</p>
         <SkillGroup title="Front End" skills={skills.frontEnds} />
       </div>
       <div className="bg-white rounded-[16px]  p-4 mb-3">

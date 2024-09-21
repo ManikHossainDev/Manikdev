@@ -1,8 +1,14 @@
 import { projects } from '@/app/_data';
 import { Parsed } from '@/components/shared/parsed/parsed';
 import { Button } from '@/components/ui/button';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Manik | Details",
+  description: "project show details",
+};
 
 type TProps = {
   params: { projectId: string };
