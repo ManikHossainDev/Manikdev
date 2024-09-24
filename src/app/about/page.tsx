@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Skills } from "./_components/skills";
 import { Education } from "./_components/education";
-import { ArrowBigDownDashIcon } from 'lucide-react';
-import { cn } from "@/utils/utils";
+import Download from "./_components/download";
 export const metadata: Metadata = {
   title: "Manik | About",
   description: "this is about to be published to the public domain",
 };
 const AboutPage = () => {
+  
   return (
     <div>
       <div className="grid md:grid-cols-12 gap-10 px-5 py-5">
@@ -211,12 +211,7 @@ const AboutPage = () => {
           />
         </div>
         <div className="overflow-y-auto overflow-x-hidden rounded-md relative w-[335px] md:w-[640px] border  group">
-          <a className={cn('absolute bg-[#00BBA6] flex px-3 py-1 rounded-md top-2 right-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100')}
-          href=""
-          download={true}
-          >
-          Download CV <ArrowBigDownDashIcon />
-          </a>
+          <Download/>
           <iframe
             src="https://i.ibb.co.com/vmmY87j/Screenshot-2024-09-21-112547.png"
             className="w-[335px] md:w-[660px] h-full"
