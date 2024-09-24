@@ -42,10 +42,10 @@ export type TExperience = {
 };
 
 // ********** Blog ********** \\
-export type TBlog = {
-  _id: string;
-  title: string;
-  image: string;
-  content: string;
-  tags: string[];
-};
+// export type TBlog = {
+//     id: number;
+//     title: string;
+//     image: string;
+//     description: string;
+// };
+

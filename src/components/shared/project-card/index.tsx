@@ -47,7 +47,7 @@ export function ProjectCard(project: TProject) {
         </Link>
 
         <Link className="flex-1" href={links.live} target="_blank">
-          <Button className="w-full">Live Site</Button>
+          <Button className="w-full bg-[#00BBA6]">Live Site</Button>
         </Link>
         <Link href={`/project/${_id}`}>
           <Button className="bg-cyan-600 text-white hover:bg-cyan-700">
