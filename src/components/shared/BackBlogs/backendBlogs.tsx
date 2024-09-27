@@ -2,21 +2,50 @@ import { TBlogS } from "@/app/Blogs/BackBlog/page";
 import Image from "next/image";
 
 const BackendBlogs = (blog: TBlogS) => {
-  const { title, description, image,} = blog;
+  const { title, description, image } = blog;
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow duration-300">
-    <Image
-      src={image}  // Use the image URL
-      alt={title}
-      width={400}  // Set a fixed width (adjust as needed)
-      height={100} // Set a fixed height (adjust as needed)
-      className="object-cover rounded-md"
-      style={{ width: "100%", height: "auto" }} // Make it responsive
-    />
-    <h2 className="text-xl font-bold mt-4">{title}</h2>
-    <p className="text-gray-600 mt-2">{description.substring(0, 210)}...</p>
-    
-  </div>
+    <div className="card glass w-full rounded-lg">
+      <Image
+       className="rounded-lg"
+        src={image}
+        alt="mani"
+        width={200} // or your preferred width
+        height={40} // or your preferred height
+        layout="responsive"
+      />
+      <div className="card-body">
+        <h2 className="card-title">{title}</h2>
+        <p>{description.substring(0, 230)}..</p>
+        <div className="rating">
+          <input
+            type="radio"
+            name="rating-2"
+            className="mask mask-star-2 bg-orange-400"
+          />
+          <input
+            type="radio"
+            name="rating-2"
+            className="mask mask-star-2 bg-orange-400"
+            defaultChecked
+          />
+          <input
+            type="radio"
+            name="rating-2"
+            className="mask mask-star-2 bg-orange-400"
+          />
+          <input
+            type="radio"
+            name="rating-2"
+            className="mask mask-star-2 bg-orange-400"
+          />
+          <input
+            type="radio"
+            name="rating-2"
+            className="mask mask-star-2 bg-orange-400"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 

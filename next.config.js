@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: "**",
       },
     ],
+     // Add your image domain here
   },
 };
 

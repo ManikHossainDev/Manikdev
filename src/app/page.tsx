@@ -3,7 +3,9 @@ import { Typewriter } from "@/components/Typewriter";
 import Image from "next/image";
 import Link from "next/link";
 
+
 const HomePage = () => {
+ 
   return (
     <div className="px-5">
       <div className="lg:grid md:grid-cols-12 grid-cols-1 gap-5 pt-5  py-4 ">
@@ -408,34 +410,34 @@ const HomePage = () => {
             <p>
               work <span className="text-[#00BBA6]">together.</span>
             </p>
-            <button
-              type="button"
-              aria-haspopup="dialog"
-              aria-expanded="false"
-              aria-controls="radix-:r14:"
-              data-state="closed"
-            >
-              <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-65 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                <div className="relative">
-                  <div className="absolute w-10 h-10 rounded-full border border-[#00BBA6] hidden group-hover:block animate-ping"></div>
-                  <div className="w-10 h-10 rounded-full border border-black group-hover:border-[#00BBA6] transition-all ease-linear duration-200">
-                    <span className="flex items-center justify-center mt-2 text-black group-hover:text-[#00BBA6] group-hover:-rotate-45 transition-all ease-linear duration-200">
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        height="20"
-                        width="20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"></path>
-                      </svg>
-                    </span>
+              <button
+                type="button"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+                aria-controls="radix-:r14:"
+                data-state="closed"
+              >
+                <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-65 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
+                  <div className="relative">
+                    <div className="absolute w-10 h-10 rounded-full border border-[#00BBA6] hidden group-hover:block animate-ping"></div>
+                    <div className="w-10 h-10 rounded-full border border-black group-hover:border-[#00BBA6] transition-all ease-linear duration-200">
+                      <span className="flex items-center justify-center mt-2 text-black group-hover:text-[#00BBA6] group-hover:-rotate-45 transition-all ease-linear duration-200">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          strokeWidth="0"
+                          viewBox="0 0 512 512"
+                          height="20"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"></path>
+                        </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </button>
+              </button>
           </div>
         </div>
         <div className="lg:col-span-6 col-span-1 rounded-3xl py-5 md:px-3 px-2  bg-white  relative group">
