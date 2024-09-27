@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import Lottie from "lottie-react";
-import zAnimate from "../../components/me.json";
+import zAnimate from "./_components/me.json";
 
 export type UserData = {
   username: string;
@@ -52,7 +52,7 @@ const RegisterPage = () => {
           className="h-[300px] md:h-[400px] w-full md:w-full"
           animationData={zAnimate}
           loop={true}
-        />
+         />
       </div>
       <div className="card w-full md:w-[80%] lg:w-[90%] mx-auto shadow-xl bg-base-100">
         <form onSubmit={handleSubmit(onSubmit)} className="card-body py-3">

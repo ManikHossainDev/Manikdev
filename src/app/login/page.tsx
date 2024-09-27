@@ -5,14 +5,13 @@
 //   description: "login manager for contact information",
 // };
 import { loginUser } from "@/utils/actions/loginUser";
-import { access } from "fs";
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import Lottie from "lottie-react";
-import zAnimate from "../../components/Animation - 1727435910277.json";
+import zAnimate from "./_components/Animation.json";
 
 export type FormValues = {
   email: string;
