@@ -20,7 +20,7 @@ export function SkillCard({ icon, name, status }: TProps) {
       <p
         className={cn(
           'mx-auto mt-4 w-fit rounded-md px-3 py-1 text-xs font-bold',
-          status === 'EXPERT' && 'bg-primary text-neutral-900',
+          status === 'EXPERT' && 'bg-[#00BBA6] text-neutral-900',
           status === 'INTERMEDIATE' && 'bg-cyan-600',
           status === 'FAMILIAR' && 'bg-neutral-500',
         )}

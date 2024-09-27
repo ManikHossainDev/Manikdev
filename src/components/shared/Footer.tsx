@@ -8,7 +8,7 @@ const FooterPage = () => {
     <h3>
       Designed & developed by{' '}
       <Link
-        className="text-primary underline"
+        className="text-[#00BBA6] underline"
         href={'https://www.linkedin.com/in/devmanik'}
         target="_blank"
       >

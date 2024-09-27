@@ -1,10 +1,12 @@
 "use client";
-
+import { signIn } from "next-auth/react";
 import { registerUser } from "@/utils/actions/registerUser";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
+import Lottie from "lottie-react";
+import zAnimate from "../../../me.json";
 
 export type UserData = {
   username: string;
@@ -36,78 +38,112 @@ const RegisterPage = () => {
       throw new Error(err.message);
     }
   };
+
+
   
   return (
     <div className="my-10">
-      <h1 className="text-center text-4xl mb-5">
-        Register <span className="text-accent">Now</span>
-      </h1>
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <Image
-            src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg?t=st=1710081713~exp=1710085313~hmac=f637c194f1f143e63a84950cbf978997453777c872adf4aebbbecdaa445601a1&w=740"
-            width={500}
-            height={200}
-            alt="login page"
-            className="w-full h-[85%]"
-          />
-        </div>
-
-        <div className="card w-[70%] h-[70%] shadow-xl bg-base-100">
-          <form onSubmit={handleSubmit(onSubmit)} className="card-body py-3">
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Full Name</span>
-              </label>
-              <input
-                type="text"
-                {...register("username")}
-                placeholder="User Name"
-                className="input input-bordered"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Email</span>
-              </label>
-              <input
-                type="email"
-                {...register("email")}
-                placeholder="Email"
-                className="input input-bordered"
-                required
-              />
-            </div>
-
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Password</span>
-              </label>
-              <input
-                {...register("password")}
-                type="password"
-                placeholder="Password"
-                className="input input-bordered"
-                required
-              />
-            </div>
-
-            <div className="form-control mt-6">
-              <button type="submit" className="btn btn-accent btn-outline">
-                Register
-              </button>
-            </div>
-            <p className="text-center">
-              Already have an account?{" "}
-              <Link className="text-accent text-green-500" href="/login">
-                Login
-              </Link>
-            </p>
-          </form>
+    <h1 className="text-center text-3xl md:text-4xl mb-5">
+      Register <span className="text-accent">Now</span>
+    </h1>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div className="card flex justify-center shadow-xl bg-base-100 rounded-md">
+        <Lottie
+          className="h-[300px] md:h-[400px] w-full md:w-full"
+          animationData={zAnimate}
+          loop={true}
+        />
+      </div>
+      <div className="card w-full md:w-[80%] lg:w-[90%] mx-auto shadow-xl bg-base-100">
+        <form onSubmit={handleSubmit(onSubmit)} className="card-body py-3">
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Full Name</span>
+            </label>
+            <input
+              type="text"
+              {...register("username")}
+              placeholder="User Name"
+              className="input input-bordered"
+              required
+            />
+          </div>
+  
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Email</span>
+            </label>
+            <input
+              type="email"
+              {...register("email")}
+              placeholder="Email"
+              className="input input-bordered"
+              required
+            />
+          </div>
+  
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Password</span>
+            </label>
+            <input
+              {...register("password")}
+              type="password"
+              placeholder="Password"
+              className="input input-bordered"
+              required
+            />
+          </div>
+  
+          <div className="form-control mt-6">
+            <button type="submit" className="btn btn-accent btn-outline">
+              Register
+            </button>
+          </div>
+          <p className="text-center">
+            Already have an account?{" "}
+            <Link className="text-accent text-green-500" href="/login">
+              Login
+            </Link>
+          </p>
+        </form>
+        <p className="text-center">Or Sign Up Using</p>
+        <div className="flex justify-center mb-10 mt-2">
+          <button
+            className="btn btn-circle"
+            onClick={() =>
+              signIn("google", {
+                callbackUrl: "https://manikdev.vercel.app/dashboard",
+              })
+            }
+          >
+            <Image
+              src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+              width={30}
+              height={30}
+              alt="google logo"
+            />
+          </button>
+          <button
+            className="btn btn-circle mx-5"
+            onClick={() =>
+              signIn("github", {
+                callbackUrl: "https://manikdev.vercel.app/dashboard",
+              })
+            }
+          >
+            <Image
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              width={30}
+              height={30}
+              alt="github logo"
+            />
+          </button>
         </div>
       </div>
     </div>
+  </div>
+  
   );
 };
 

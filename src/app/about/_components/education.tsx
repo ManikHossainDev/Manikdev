@@ -6,7 +6,7 @@ export function Education() {
   return (
     <>
       <Heading className="pt-2">Education.</Heading>
-      <div className="mt-6 grid gap-6 space-y-1">
+      <div className="mt-6 grid gap-3 space-y-1">
         {educations.map(
           ({ degreeName, institution, obtainedCgpa, totalCgpa, year }) => (
             <div

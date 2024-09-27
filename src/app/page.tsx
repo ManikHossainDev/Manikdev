@@ -3,7 +3,6 @@ import { Typewriter } from "@/components/Typewriter";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const HomePage = () => {
  
   return (
@@ -308,6 +307,7 @@ const HomePage = () => {
                         </div>
                       </Link>
                     </div>
+                    
                     <div className="py-10">
                       <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
                         Stay with me

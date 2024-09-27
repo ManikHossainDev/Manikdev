@@ -178,7 +178,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className=" md:col-span-8">
+        <div className=" md:col-span-8 ">
           <div className="rounded-[16px] py-8 px-6 bg-white">
             <h1 className="text-3xl font-[700] font-butler">About me</h1>
             <div className="mt-5">
@@ -197,24 +197,24 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
-          <div className="py-2">
+          <div className="py-7">
             <Skills />
           </div>
         </div>
       </div>
-      <div className="px-5 w-full h-96 md:flex lg:flex justify-between">
-        <div className="py-3 px-2 bg-white rounded-md">
+      <div className=" w-full h-96 md:flex lg:flex justify-around ">
+        <div className="space-y-5 py-5 px-2 bg-white rounded-md">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28681.590138584394!2d88.44536994972988!3d26.027051703667983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4c00fae515037%3A0xc354ad492e9e6874!2sThakurgaon!5e0!3m2!1sen!2sbd!4v1724669238364!5m2!1sen!2sbd"
-            className="w-[335px] md:w-[710px] h-full  border"
+            className="w-full md:w-[710px] h-full  border"
             loading="lazy"
           />
         </div>
-        <div className="overflow-y-auto overflow-x-hidden rounded-md relative w-[335px] md:w-[640px] border  group">
+        <div className="overflow-y-auto overflow-x-hidden rounded-md relative w-full md:w-[640px] border  group">
           <Download/>
           <iframe
             src="https://i.ibb.co.com/vmmY87j/Screenshot-2024-09-21-112547.png"
-            className="w-[335px] md:w-[660px] h-full"
+            className="w-full md:w-[660px] h-full"
             allow="autoplay"
           />
         </div>
