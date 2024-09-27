@@ -1,4 +1,4 @@
-import { TBlogS } from "@/app/Blogs/BackBlog/page";
+import { TBlogS } from "@/app/(Blogs)/BackBlog/page";
 import Image from "next/image";
 
 const BackendBlogs = (blog: TBlogS) => {
@@ -6,7 +6,7 @@ const BackendBlogs = (blog: TBlogS) => {
   return (
     <div className="card glass w-full rounded-lg">
       <Image
-       className="rounded-lg"
+        className="rounded-lg"
         src={image}
         alt="mani"
         width={200} // or your preferred width
