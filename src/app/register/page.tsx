@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import Lottie from "lottie-react";
-import zAnimate from "../../../me.json";
+import zAnimate from "../../components/me.json";
 
 export type UserData = {
   username: string;

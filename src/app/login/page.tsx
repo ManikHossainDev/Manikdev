@@ -12,7 +12,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import Lottie from "lottie-react";
-import zAnimate from "../../../Animation - 1727435910277.json";
+import zAnimate from "../../components/Animation - 1727435910277.json";
 
 export type FormValues = {
   email: string;
