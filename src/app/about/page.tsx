@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <div>
-      <div className="grid  md:grid-cols-12 gap-10 px-5 py-5">
-        <div className="col-span-1 md:col-span-4   space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-10 px-5 py-5">
+        <div className="col-span-1 md:col-span-5 lg:col-span-4  space-y-4">
           <div className="w-full h-auto bg-gray-100 bg-opacity-55 border border-black/25 rounded-3xl py-10 md:p-10 relative group">
             <div>
               {/* Use Next.js Image Component for Optimized Image Loading */}
@@ -157,6 +157,7 @@ const AboutPage = () => {
                   <div className="relative">
                     <div className="absolute w-10 h-10 rounded-full border border-[#00BBA6] hidden group-hover:block animate-ping"></div>
                     <div className="w-10 h-10 rounded-full border border-black group-hover:border-[#00BBA6] transition-all ease-linear duration-200">
+                      <Link  href='/Contact'>
                       <span className="flex items-center justify-center mt-2 text-black group-hover:text-[#00BBA6] group-hover:-rotate-45 transition-all ease-linear duration-200">
                         <svg
                           stroke="currentColor"
@@ -170,6 +171,7 @@ const AboutPage = () => {
                           <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"></path>
                         </svg>
                       </span>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -177,7 +179,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 md:col-span-8 ">
+        <div className="col-span-1 md:col-span-7 lg:col-span-8">
           <div className="rounded-[16px] py-8 px-6 bg-white">
             <h1 className="text-3xl font-[700] font-butler">About me</h1>
             <div className="mt-5">
@@ -201,19 +203,19 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-96   md:flex lg:flex justify-around ">
-        <div className="space-y-5 py-5 px-2 bg-white rounded-md">
+      <div className="h-96 grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-10">
+        <div className=" col-span-1 md:col-span-6 lg:col-span-6  space-y-4">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28681.590138584394!2d88.44536994972988!3d26.027051703667983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4c00fae515037%3A0xc354ad492e9e6874!2sThakurgaon!5e0!3m2!1sen!2sbd!4v1724669238364!5m2!1sen!2sbd"
-            className="w-full md:w-[710px] h-full  border"
+            className="w-full rounded-md  h-full  border"
             loading="lazy"
           />
         </div>
-        <div className="overflow-y-auto overflow-x-hidden rounded-md relative w-full md:w-[640px] border  group">
+        <div className="overflow-y-auto bg-white overflow-x-hidden rounded-md relative group col-span-1 md:col-span-6 lg:col-span-6  space-y-4">
           <Download/>
           <iframe
             src="https://i.ibb.co.com/vmmY87j/Screenshot-2024-09-21-112547.png"
-            className="w-full md:w-[660px] h-full"
+            className="w-full h-full"
             allow="autoplay"
           />
         </div>

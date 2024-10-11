@@ -128,7 +128,7 @@ const HomePage = () => {
             <div className="col-span-1 md:col-span-6 ">
               <div className="grid grid-cols-1 md:grid-cols-8   gap-5">
                 <div className="col-span-1  md:col-span-4 lg:col-span-4">
-                  <Link href="/projects">
+                  <div>
                     <div className="h-full w-full rounded-[16px] py-10 px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
                         <Image
@@ -149,7 +149,7 @@ const HomePage = () => {
                         <p className="text-2xl font-semibold">Projects</p>
                       </div>
                       <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                        <Link href="/projects">
+                        <Link href="/Projects">
                           <div className="flex items-center justify-center w-16 h-8 rounded-[16px] border border-black transition-all ease-linear duration-200">
                             <span className="flex items-center justify-center text-black group-hover:rotate-45 transition-all ease-linear duration-200">
                               <svg
@@ -171,11 +171,11 @@ const HomePage = () => {
                         </Link>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </div>
                 <div className="col-span-1 md:col-span-4  lg:col-span-4">
-                  <Link href="/Blogs">
-                    <div className="h-full w-full rounded-[16px] py-10 px-6 bg-white relative group">
+                  <div>
+                    <div className="h-full w-full rounded-[16px] py-11 px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
                         <Image
                           alt="work-imag"
@@ -195,7 +195,7 @@ const HomePage = () => {
                         <p className="text-2xl font-semibold">Blogs </p>
                       </div>
                       <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                        <Link href="/Blogs">
+                        <Link href="/FrontBlog">
                           <div className="flex items-center justify-center w-16 h-8 rounded-[16px] border border-black transition-all ease-linear duration-200">
                             <span className="flex items-center justify-center text-black group-hover:rotate-45 transition-all ease-linear duration-200">
                               <svg
@@ -217,7 +217,7 @@ const HomePage = () => {
                         </Link>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-8   mt-3  gap-5">
@@ -315,7 +315,7 @@ const HomePage = () => {
                       <p className="text-2xl font-semibold">Profiles</p>
                     </div>
                     <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                      <Link href="/projects">
+                      <Link href="#">
                         <div className="flex items-center justify-center w-16 h-8 rounded-[16px] border border-black transition-all ease-linear duration-200">
                           <span className="flex items-center justify-center text-black group-hover:rotate-45 transition-all ease-linear duration-200">
                             <svg
@@ -339,8 +339,8 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="col-span-1 md:col-span-4  lg:col-span-3">
-                  <Link href="#">
-                    <div className="h-full w-full rounded-[16px] py-10 md:py-10 px-6 bg-white relative group">
+                  <Link href="/Credentials">
+                    <div className="h-full w-full rounded-[16px] py-8 md:py-8 px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
                         <Image
                           alt="work-imag"
@@ -421,6 +421,7 @@ const HomePage = () => {
                   <div className="relative">
                     <div className="absolute w-10 h-10 rounded-full border border-[#00BBA6] hidden group-hover:block animate-ping"></div>
                     <div className="w-10 h-10 rounded-full border border-black group-hover:border-[#00BBA6] transition-all ease-linear duration-200">
+                      <Link href="/Contact">
                       <span className="flex items-center justify-center mt-2 text-black group-hover:text-[#00BBA6] group-hover:-rotate-45 transition-all ease-linear duration-200">
                         <svg
                           stroke="currentColor"
@@ -434,6 +435,7 @@ const HomePage = () => {
                           <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"></path>
                         </svg>
                       </span>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -696,6 +698,7 @@ const HomePage = () => {
               <div className="relative">
                 <div className="absolute w-10 h-10 rounded-full border border-[#00BBA6] hidden group-hover:block animate-ping"></div>
                 <div className="w-10 h-10 rounded-full border border-black group-hover:border-[#00BBA6] transition-all ease-linear duration-200">
+                  <Link href="/about">
                   <span className="flex items-center justify-center mt-2 text-black group-hover:text-[#00BBA6] group-hover:-rotate-45 transition-all ease-linear duration-200">
                     <svg
                       stroke="currentColor"
@@ -709,6 +712,7 @@ const HomePage = () => {
                       <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"></path>
                     </svg>
                   </span>
+                  </Link>
                 </div>
               </div>
             </div>
