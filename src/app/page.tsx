@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import CredentialsPhoto from "@/components/CredentialsPhoto/CredentialsPhoto";
 import { Typewriter } from "@/components/Typewriter";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,9 +32,9 @@ const HomePage = () => {
                   A MERN & PERN Stack Developer with a passion for creating
                   dynamic and user-friendly applications. Let’s grow together!!
                 </p>
-                <div className="md:flex items-center gap-5 space-y-2">
+                <div className="md:flex items-center gap-5">
                   {/* Resume Button */}
-                  <button className="flex items-center gap-1 bg-slate-300 hover:bg-slate-100 hover:text-[#00BBA6] transition-all ease-linear duration-150 rounded-md px-3 py-2 text-lg group">
+                  <button className="flex items-center gap-2  mb-3 md:mb-0 lg:mb-0 bg-slate-300 hover:bg-slate-100 hover:text-[#00BBA6] transition-all ease-linear duration-150 rounded-md px-3 py-2 text-lg group">
                     <span className=" group-hover:rotate-45 transform transition-all ease-linear duration-200">
                       <svg
                         fill="#00BBA6"
@@ -71,7 +72,7 @@ const HomePage = () => {
                   </button>
 
                   {/* Let's Meet Button */}
-                  <button className="flex items-center gap-3 transform transition-all ease-linear duration-200 hover:bg-[#7de4b9] hover:text-black bg-[#00BBA6] rounded-md px-3 py-2 text-white text-lg group">
+                  <button className="flex items-center gap-2  transform transition-all ease-linear duration-200 hover:bg-[#7de4b9] hover:text-black bg-[#00BBA6] rounded-md px-3 py-2 text-white text-lg group">
                     <Link href="https://calendly.com/manikdev/30min" passHref>
                       <span className="flex items-center gap-3">
                         <span className="text-white group-hover:text-black transform transition-all ease-linear duration-200">
@@ -340,21 +341,12 @@ const HomePage = () => {
                 </div>
                 <div className="col-span-1 md:col-span-4  lg:col-span-3">
                   <Link href="/Credentials">
-                    <div className="h-full w-full rounded-[16px] py-8 md:py-8 px-6 bg-white relative group">
+                    <div className="h-full w-full rounded-[16px] py-7 md:py-7 px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
-                        <Image
-                          alt="work-imag"
-                          loading="lazy"
-                          width="224"
-                          height="126"
-                          decoding="async"
-                          src="https://itznur07-personal-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsign.6df3c47c.png&w=384&q=75"
-                          className="p-1"
-                          style={{ color: "transparent" }}
-                        />
+                        <CredentialsPhoto/>
                       </div>
                       <div>
-                        <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
+                        <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-1">
                           More about me
                         </p>
                         <p className="text-base md:text-lg lg:text-xl font-semibold text-clip">

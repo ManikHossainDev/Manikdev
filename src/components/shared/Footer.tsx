@@ -3,7 +3,7 @@ import React from "react";
 
 const FooterPage = () => {
   return (
-    <div className="mt-auto flex flex-col items-center w-[75%] mx-auto py-4 px-5 text-sm">
+    <div className="mt-auto flex flex-col items-center w-[100%] md:w-[75%] mx-auto py-4 px-5 text-sm">
 
     <h3>
       Designed & developed by{' '}
