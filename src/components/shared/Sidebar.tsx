@@ -43,6 +43,24 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
+          <Link href="/dashboard
+          ">
+            My Blogs
+          </Link>
+        </li>
+        <li>
+          <Link href="/dashboard
+          ">
+            Certificate
+          </Link>
+        </li>
+        <li>
+          <Link href="/dashboard
+          ">
+            Bangladesh
+          </Link>
+        </li>
+        <li>
           <Link href="/dashboard/settings">
             <svg
               xmlns="http://www.w3.org/2000/svg"

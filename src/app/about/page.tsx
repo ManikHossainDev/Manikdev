@@ -10,11 +10,10 @@ export const metadata: Metadata = {
   description: "this is about to be published to the public domain",
 };
 const AboutPage = () => {
-  
   return (
     <div>
-      <div className="grid md:grid-cols-12 gap-10 px-5 py-5">
-        <div className="md:col-span-4 space-y-4">
+      <div className="grid  md:grid-cols-12 gap-10 px-5 py-5">
+        <div className="col-span-1 md:col-span-4   space-y-4">
           <div className="w-full h-auto bg-gray-100 bg-opacity-55 border border-black/25 rounded-3xl py-10 md:p-10 relative group">
             <div>
               {/* Use Next.js Image Component for Optimized Image Loading */}
@@ -129,7 +128,7 @@ const AboutPage = () => {
           <div className="bg-white rounded-[16px]  p-5">
             <Education />
           </div>
-          <div className=" rounded-[16px]  bg-white py-16 md:py-[70px] px-6 relative group">
+          <div className=" rounded-[16px] bg-white py-16 md:py-[70px] px-6 relative group">
             <div className="absolute top-1.5 left-0">
               <Image
                 alt="icon"
@@ -178,7 +177,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className=" md:col-span-8 ">
+        <div className="col-span-1 md:col-span-8 ">
           <div className="rounded-[16px] py-8 px-6 bg-white">
             <h1 className="text-3xl font-[700] font-butler">About me</h1>
             <div className="mt-5">
@@ -202,7 +201,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className=" w-full h-96 md:flex lg:flex justify-around ">
+      <div className="w-full h-96   md:flex lg:flex justify-around ">
         <div className="space-y-5 py-5 px-2 bg-white rounded-md">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28681.590138584394!2d88.44536994972988!3d26.027051703667983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4c00fae515037%3A0xc354ad492e9e6874!2sThakurgaon!5e0!3m2!1sen!2sbd!4v1724669238364!5m2!1sen!2sbd"
