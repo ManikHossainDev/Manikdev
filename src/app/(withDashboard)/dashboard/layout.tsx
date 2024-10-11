@@ -12,13 +12,18 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="min-h-screen my-2">
-      <div className="flex justify-between">
-        <div className="w-[20%]">
-          <Sidebar />
-        </div>
-        <div className="w-[80%] bg-slate-200 rounded-box ml-2 min-h-screen">{children}</div>
-      </div>
+    <div className="my-2">
+  <div className="flex flex-col md:flex-row justify-between">
+    {/* Sidebar */}
+    <div className="w-full md:w-[20%] bg-slate-300">
+      <Sidebar />
     </div>
+
+    {/* Main content */}
+    <div className="w-full md:w-[80%] bg-slate-200 rounded-box ml-0 md:ml-2 mt-2 md:mt-0">
+      {children}
+    </div>
+  </div>
+</div>
   );
 }

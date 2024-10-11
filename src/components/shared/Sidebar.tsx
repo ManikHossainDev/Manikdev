@@ -3,7 +3,7 @@ import Link from "next/link";
 const Sidebar = () => {
   return (
     <div>
-      <ul className="menu bg-slate-200 p-5 min-h-screen rounded-box">
+      <ul className="menu bg-slate-200 p-5  rounded-box">
         <li>
           <Link href="/dashboard">
             <svg
@@ -43,21 +43,85 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/dashboard
-          ">
+          <Link
+            href="/dashboard
+          "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 20H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v8" />
+              <path d="M18 20v-5h-2a1 1 0 00-1 1v5a1 1 0 001 1h4a1 1 0 001-1v-5a1 1 0 00-1-1h-2v5z" />
+              <path d="M8 10h4M8 14h4" />
+            </svg>
             My Blogs
           </Link>
         </li>
         <li>
-          <Link href="/dashboard
-          ">
+          <Link
+            href="/dashboard
+          "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <rect
+                x="3"
+                y="4"
+                width="18"
+                height="14"
+                rx="2"
+                ry="2"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M9 8h6M9 12h6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              />
+              <circle cx="12" cy="17" r="1.5" fill="currentColor" />
+              <path
+                d="M10 19.5l2-2 2 2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              />
+            </svg>
             Certificate
           </Link>
         </li>
         <li>
-          <Link href="/dashboard
-          ">
-            Bangladesh
+          <Link
+            href="/dashboard
+          "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 12.5 7 12.5S19 14.25 19 9c0-3.86-3.14-7-7-7zm0 10.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 7.5 12 7.5s2.5 1.12 2.5 2.5S13.38 12.5 12 12.5z"
+                clipRule="evenodd"
+              />
+            </svg>
+            Bangladesh Map
           </Link>
         </li>
         <li>
