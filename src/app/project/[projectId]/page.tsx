@@ -40,7 +40,7 @@ export default function ProjectDetailsPage({ params: { projectId } }: TProps) {
         <div className="mt-6 flex flex-wrap gap-3">
           {technologies.map((technology) => (
             <span
-              className="flex-1 whitespace-nowrap rounded-md bg-slate-500 px-3 py-1 text-center text-xs font-semibold"
+              className="flex-1 whitespace-nowrap rounded-md bg-slate-500 text-white px-3 py-1 text-center text-xs font-semibold"
               key={technology}
             >
               {technology}

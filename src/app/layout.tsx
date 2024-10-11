@@ -33,7 +33,7 @@ export default async function RootLayout({
         )}
       >
         <Navbar session={session} />
-        <div className=" w-[75%] mx-auto h-min-screen">
+        <div className="w-full md:w-[75%] lg:w-[75%] mx-auto h-min-screen">
           {children}
         </div>
         <FooterPage />
