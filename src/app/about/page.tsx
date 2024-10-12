@@ -14,7 +14,7 @@ const AboutPage = () => {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-10 px-5 py-5">
         <div className="col-span-1 md:col-span-5 lg:col-span-4  space-y-4">
-          <div className="w-full h-auto bg-gray-300 bg-opacity-55 border border-black/25 rounded-3xl py-10 md:p-10 relative group">
+          <div className="w-full h-auto bg-white bg-opacity-55 border rounded-3xl py-10 md:p-10 relative group">
             <div>
               {/* Use Next.js Image Component for Optimized Image Loading */}
               <Image
@@ -28,7 +28,7 @@ const AboutPage = () => {
             <div className="text-3xl text-center font-semibold mt-4">
               <p className="font-medium">Manik Hossain</p>
               <p className="capitalize text-sm font-medium text-gray-500 mt-1">
-                @manik08
+              se.manik.js@gmail.com
               </p>
             </div>
 

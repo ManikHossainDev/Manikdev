@@ -34,7 +34,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h1 className="font-bold">Email</h1>
-                  <p className="dark:text-[#777676]">manikpdm@gmail.com</p>
+                  <p className="dark:text-[#777676]">se.manik.js@gmail.com</p>
                 </div>
               </div>
 

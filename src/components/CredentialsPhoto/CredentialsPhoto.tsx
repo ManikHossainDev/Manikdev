@@ -5,8 +5,8 @@ const CredentialsPhoto = () => {
   return (
     <div>
        <div className="col-span-12 md:col-span-6 me p-1">
-      <div className="box container mx-auto p-4 bg-white rounded-lg shadow-lg ">
-        <div className="content flex flex-col items-center text-center">
+      <div className="boxs container mx-auto p-4 bg-white rounded-lg shadow-lg ">
+        <div className="contentss flex flex-col items-center text-center">
           <Image
             src="https://i.ibb.co.com/J37bMzc/m1.png"
             alt="Manik Hossain"
