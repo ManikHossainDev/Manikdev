@@ -46,7 +46,7 @@ const Sidebar = () => {
           <Link href="/dashboard/Course">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -58,7 +58,7 @@ const Sidebar = () => {
                 d="M12 3v18m0-18c-4 1-8 1-10 4v11c2-3 6-3 10-4m0 18c4-1 8-1 10-4V7c-2 3-6 3-10 4"
               />
             </svg>
-            Course
+            Course 
           </Link>
         </li>
         <li>
@@ -68,7 +68,7 @@ const Sidebar = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-5 w-5"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -84,10 +84,35 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
+          <Link
+            href="/dashboard/team
+          "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              className="h-5 w-5"
+              fill="currentColor"
+            >
+              <g id="team-icon">
+                <circle cx="32" cy="20" r="8" />
+                <path d="M24 40c0-4.42 3.58-8 8-8s8 3.58 8 8v8H24v-8z" />
+
+                <circle cx="16" cy="24" r="6" />
+                <path d="M10 42c0-3.31 2.69-6 6-6s6 2.69 6 6v6H10v-6z" />
+
+                <circle cx="48" cy="24" r="6" />
+                <path d="M42 42c0-3.31 2.69-6 6-6s6 2.69 6 6v6H42v-6z" />
+              </g>
+            </svg>
+            Our Team 
+          </Link>
+        </li>
+        <li>
           <Link href="/dashboard/Certificate">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -124,7 +149,7 @@ const Sidebar = () => {
           <Link href="/dashboard/bangladesh">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-5 w-5"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -134,7 +159,7 @@ const Sidebar = () => {
                 clipRule="evenodd"
               />
             </svg>
-            Bangladesh Map
+            Bangla Map
           </Link>
         </li>
         <li>

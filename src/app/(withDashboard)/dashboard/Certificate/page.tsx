@@ -76,7 +76,7 @@ export default function ImageGrid() {
           layout="responsive"
         />
       </Roll>
-      <Flip>
+      <Bounce>
         <Image
           alt="Mountain"
           src="https://i.ibb.co.com/HKhmSGb/1717565708032-1.jpg"
@@ -85,7 +85,7 @@ export default function ImageGrid() {
           className="w-full rounded-md h-40"
           layout="responsive"
         />
-      </Flip>
+      </Bounce>
     </div>
   );
 }

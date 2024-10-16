@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 const AboutPage = () => {
   return (
-    <div className="mb-5 px-2">
+    <div className="mb-5 mx-2">
       <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-10 py-5">
         <div className="col-span-1 md:col-span-5 lg:col-span-4  space-y-4">
-          <div className="w-full h-auto bg-white bg-opacity-55 border rounded-3xl py-10 md:p-10 relative group">
+          <div className="w-full h-auto bg-white  border rounded-3xl py-10 md:p-10 relative group">
             <div>
               {/* Use Next.js Image Component for Optimized Image Loading */}
               <Image
@@ -102,7 +102,7 @@ const AboutPage = () => {
         <div className="col-span-1 md:col-span-7 lg:col-span-8">
           <div className="rounded-[16px] py-8 px-6 bg-white">
             <h1 className="text-3xl font-[700] font-butler">About me</h1>
-            <div className="mt-5">
+            <div className="mt-5 text-gray-600">
               <p className="md:text-lg font-lato">
                 Hi, I’m Manik Hossain, a MERN stack developer with a passion for
                 creating dynamic and user-friendly web applications, always
