@@ -1,34 +1,34 @@
-"use client"
-import { Bounce, Fade } from "react-awesome-reveal";
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { TProject } from '@/lib/types';
+"use client";
+import {  Zoom } from "react-awesome-reveal";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { TProject } from "@/lib/types";
 
 export function ProjectCard(project: TProject) {
   const { _id, coverUrl, technologies, name, description, links } = project;
 
   return (
     <div className="cursor-pointer rounded-2xl bg-white p-6 ring-1 ring-white/50 transition duration-300 hover:-translate-y-1">
-     <Bounce  key={project._id}>
-      <Image
-        className="w-full rounded-xl"
-        src={coverUrl}
-        width={700}
-        height={700}
-        alt="Project_Cover"
-      />
-      </Bounce>
-      <div className="mt-6 flex flex-wrap gap-3">
-        {technologies.map((technology) => (
-          <span
-            className="flex-1 whitespace-nowrap rounded-md bg-slate-200 px-3 py-1  text-center text-xs font-semibold"
-            key={technology}
-          >
-            {technology}
-          </span>
-        ))}
-      </div>
+      <Zoom key={project._id}>
+        <Image
+          className="w-full rounded-xl"
+          src={coverUrl}
+          width={700}
+          height={700}
+          alt="Project_Cover"
+        />
+      </Zoom>
+        <div className="mt-6 flex flex-wrap gap-3">
+          {technologies.map((technology) => (
+            <span
+              className="flex-1 whitespace-nowrap rounded-md bg-slate-200 px-3 py-1  text-center text-xs font-semibold"
+              key={technology}
+            >
+              {technology}
+            </span>
+          ))}
+        </div>
       <h3 className="mt-8 text-2xl font-bold uppercase tracking-wider">
         {name}
       </h3>
@@ -39,13 +39,13 @@ export function ProjectCard(project: TProject) {
       />
       <div className="mt-8 flex flex-row flex-wrap items-center justify-end gap-6">
         <Link className="flex-1" href={links.client} target="_blank">
-          <Button className="w-full" variant={'outline'}>
+          <Button className="w-full" variant={"outline"}>
             Client
           </Button>
         </Link>
 
         <Link className="flex-1" href={links.server} target="_blank">
-          <Button className="w-full" variant={'outline'}>
+          <Button className="w-full" variant={"outline"}>
             Server
           </Button>
         </Link>

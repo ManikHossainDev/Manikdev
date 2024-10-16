@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative flex flex-col">
-      <div className=" mx-auto md:flex items-center justify-evenly space-x-5 mt-7">
+      <div className=" mx-auto md:flex items-center justify-evenly space-x-5 mt-5">
         <Link href="/FrontBlog">FrontEnd_Blogs</Link>
         <Link href="/BackBlog">BackEnd_Blogs</Link>
       </div>

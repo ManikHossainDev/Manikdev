@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <div>
-      <ul className="menu bg-slate-200 p-5 rounded-box">
+    <div className="p-5">
+      <ul className="menu rounded-box">
         <li>
           <Link href="/dashboard">
             <svg
@@ -24,7 +24,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/dashboard/user-info">
+          <Link href="/dashboard/userinfo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -39,12 +39,31 @@ const Sidebar = () => {
                 d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            User Info
+            Profile
+          </Link>
+        </li>
+        <li>
+          <Link href="/dashboard/Course">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M12 3v18m0-18c-4 1-8 1-10 4v11c2-3 6-3 10-4m0 18c4-1 8-1 10-4V7c-2 3-6 3-10 4"
+              />
+            </svg>
+            Course
           </Link>
         </li>
         <li>
           <Link
-            href="/dashboard
+            href="/dashboard/myblogs
           "
           >
             <svg
@@ -65,10 +84,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            href="/dashboard
-          "
-          >
+          <Link href="/dashboard/Certificate">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -105,9 +121,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            href="/dashboard/bangladesh"
-          >
+          <Link href="/dashboard/bangladesh">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"

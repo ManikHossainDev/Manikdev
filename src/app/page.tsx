@@ -69,7 +69,7 @@ const HomePage = () => {
                       </svg>
                     </span>
                     <Link
-                      href="https://drive.google.com/file/d/1T4pP-Q7xxNb0-65acVSWuJAfFseYRxcN/view?usp=drive_link"
+                      href="https://drive.google.com/file/d/1ptgLkOGJmNmpHRqKDO9wNxaSTakwh1BE/view?usp=drive_link"
                       passHref
                     >
                       Resume

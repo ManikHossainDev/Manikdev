@@ -61,7 +61,7 @@ const AboutPage = () => {
                 src="https://itznur07-personal-web.vercel.app/_next/static/media/icon.5fe9906c.svg"
               />
             </div>
-            <div className="mt-16 text-3xl md:text-4xl py-5  font-semibold leading-tight">
+            <div className="mt-16 text-3xl md:text-4xl py-2  font-semibold leading-tight">
               <p>Let's</p>
               <p>
                 work <span className="text-[#00BBA6]">together.</span>

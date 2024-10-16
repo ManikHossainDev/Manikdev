@@ -1,9 +1,9 @@
 "use client"
 import Image from "next/image";
-import {  JackInTheBox } from "react-awesome-reveal";
+import {  Roll } from "react-awesome-reveal";
 const Workimag = () => {
   return (
-    <JackInTheBox>
+    <Roll>
     <Image
       alt="work-imag"
       loading="lazy"
@@ -14,7 +14,7 @@ const Workimag = () => {
       className="p-1"
       style={{ color: "transparent" }}
     />
-    </JackInTheBox>
+    </Roll>
   );
 };
 

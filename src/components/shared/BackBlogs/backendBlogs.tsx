@@ -13,7 +13,7 @@ const BackendBlogs = (blog: TBlogS) => {
   const { title, description, image } = blog;
   return (
     <>
-      <div className="box bg-slate-200 rounded-md ">
+      <div className="box bg-white rounded-md p-2">
         <JackInTheBox>
           <Image
             className="rounded-t-md w-full h-[200px]"
