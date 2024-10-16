@@ -24,7 +24,7 @@ export default function ProjectDetailsPage({ params: { projectId } }: TProps) {
     projectDetails;
 
   return (
-    <main className="container flex flex-col-reverse gap-12 py-6 lg:flex-row">
+    <main className="container flex flex-col-reverse gap-12 py-6 lg:flex-row px-2">
       <section className="w-full bg-white p-5 rounded-md">
         <h1 className="mb-4 text-2xl font-semibold text-black">{name}</h1>
         <Parsed className="text-black" data={description} />

@@ -1,3 +1,5 @@
+"use client"
+import { Bounce, Fade } from "react-awesome-reveal";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -8,6 +10,7 @@ export function ProjectCard(project: TProject) {
 
   return (
     <div className="cursor-pointer rounded-2xl bg-white p-6 ring-1 ring-white/50 transition duration-300 hover:-translate-y-1">
+     <Bounce  key={project._id}>
       <Image
         className="w-full rounded-xl"
         src={coverUrl}
@@ -15,6 +18,7 @@ export function ProjectCard(project: TProject) {
         height={700}
         alt="Project_Cover"
       />
+      </Bounce>
       <div className="mt-6 flex flex-wrap gap-3">
         {technologies.map((technology) => (
           <span

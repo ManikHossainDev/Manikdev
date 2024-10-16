@@ -12,7 +12,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className=" my-2">
+    <div className=" my-2 px-2">
       <div className="flex flex-col md:flex-row justify-between space-y-3">
         <div className="w-[100%] md:w-[20%]">
           <Sidebar />

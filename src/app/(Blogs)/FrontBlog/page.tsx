@@ -10,9 +10,9 @@ export interface TBlogS {
  const Page = () => {
   const blogs = blogsData.BlogFrontEnd;
   return (
-    <div className=" mx-auto  px-5">
+    <div className=" mx-auto  px-2 py-5">
       {/* Responsive grid with 3 columns for larger screens and 1 column for smaller screens */}
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-10">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-10 px-2">
         {blogs.map((blog: TBlogS) => (
           <BackendBlogs key={blog.id} {...blog} />
         ))}

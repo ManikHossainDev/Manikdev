@@ -7,8 +7,8 @@ export function Skills() {
     <>
      
       <div className="bg-white rounded-[16px]  p-4 mb-3 ">
-        <p className="text-3xl font-[700] font-butler text-center -mt-9 ">
-          <button className="bg-white px-5 rounded-md hover:bg-slate-100">Skills</button>
+        <p className="text-2xl font-[500] font-butler text-center -mt-9">
+          <button className="bg-white px-5 py-2 rounded-md hover:bg-slate-100">Skills</button>
         </p>
         <SkillGroup title="Front End" skills={skills.frontEnds} />
       </div>

@@ -10,7 +10,7 @@ const Download = () => {
       setDownloading(true);
 
       // Fetch the file from the public assets directory
-      const response = await fetch("/assets/manik-2.pdf");
+      const response = await fetch("/assets/manikjs.pdf");
       const blob = await response.blob();
 
       // Create a local URL for the fetched blob
@@ -22,7 +22,7 @@ const Download = () => {
       // Programmatically create an anchor element to trigger the download
       const link = document.createElement("a");
       link.href = url;
-      link.download = "manik-2.pdf";
+      link.download = "manikjs.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

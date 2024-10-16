@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import { TBlogS } from "@/app/(Blogs)/BackBlog/page";
 import Image from "next/image";
 import { useState } from "react";
+import { JackInTheBox } from "react-awesome-reveal";
 const BackendBlogs = (blog: TBlogS) => {
   const [showModal, setShowModal] = useState(false);
   const [blogId, setBlogId] = useState<string | null>(null);
@@ -9,17 +10,19 @@ const BackendBlogs = (blog: TBlogS) => {
     setShowModal(!showModal);
   };
 
-  const { title, description, image,} = blog;
+  const { title, description, image } = blog;
   return (
     <>
       <div className="box bg-slate-200 rounded-md ">
-        <Image
-          className="rounded-t-md w-full h-[200px]"
-          height={200}
-          width={500}
-          src={image}
-          alt=""
-        />
+        <JackInTheBox>
+          <Image
+            className="rounded-t-md w-full h-[200px]"
+            height={200}
+            width={500}
+            src={image}
+            alt=""
+          />
+        </JackInTheBox>
         <div className="px-3 py-2">
           <h1 className="text-2xl pt-1">{title}</h1>
           <p>{description.substring(0, 120)}</p>
@@ -31,7 +34,6 @@ const BackendBlogs = (blog: TBlogS) => {
       </div>
     </>
   );
-  
 };
 
 export default BackendBlogs;

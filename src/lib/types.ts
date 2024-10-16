@@ -5,7 +5,7 @@ export type TSkill = {
   status: TSkillStatus;
   icon: string;
 };
-export type TSkillStatus = 'EXPERT' | 'INTERMEDIATE' | 'FAMILIAR';
+export type TSkillStatus = "EXPERT" | "INTERMEDIATE" | "FAMILIAR";
 
 // ********** Education ********** \\
 export type TEducation = {
@@ -48,4 +48,3 @@ export type TExperience = {
 //     image: string;
 //     description: string;
 // };
-

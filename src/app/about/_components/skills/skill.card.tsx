@@ -1,4 +1,5 @@
-
+"use client"
+import { Fade } from "react-awesome-reveal";
 import { IconPicker } from '@/components/shared/icon-picker';
 import { TSkillStatus } from '@/lib/types';
 import { cn } from '@/utils/utils';
@@ -14,7 +15,9 @@ export function SkillCard({ icon, name, status }: TProps) {
   return (
     <div className="cursor-pointer rounded-2xl bg-neutral-100 p-6 text-center transition hover:shadow-[0_0_20px_5px_#159763]">
       <div className="mx-auto mb-6 w-fit text-6xl">
+        <Fade direction="up">
         <IconPicker iconName={icon} />
+        </Fade>
       </div>
       <h2>{name}</h2>
       <p

@@ -14,7 +14,7 @@ type UserProps = {
 const Navbar = ({ session }: { session: UserProps | null }) => {
   return (
     <div className="">
-      <div className="navbar rounded-sm border-b  sticky top-0 z-20 transition-all duration-300 w-[100%] md:w-[75%] mx-auto">
+      <div className="navbar rounded-sm border-b  sticky top-0 z-20 transition-all duration-300 container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,19 +42,19 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
               </li>
 
               <li>
-                <Link href="/about">About Us</Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/Projects">Projects</Link>
+                <Link href="/Projects">Project</Link>
               </li>
               <li>
-                <Link href="/FrontBlog">Blogs</Link>
+                <Link href="/FrontBlog">Blog</Link>
               </li>
               <li>
                 <Link href="/Contact">Contact</Link>
               </li>
               <li>
-                <Link href="/dashboard">Dashboard</Link>
+                <Link href="/dashboard">Career</Link>
               </li>
             </ul>
           </div>
@@ -71,7 +71,7 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
             </li>
 
             <li>
-              <Link href="/about">AboutUs</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
               <Link href="/Projects">Projects</Link>
@@ -83,7 +83,7 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
               <Link href="/Contact">Contact</Link>
             </li>
             <li>
-              <Link href="/dashboard">Dashboard</Link>
+              <Link href="/dashboard">Career</Link>
             </li>
           </ul>
         </div>
