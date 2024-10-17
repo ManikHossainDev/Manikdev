@@ -9,7 +9,7 @@ export function ProjectCard(project: TProject) {
   const { _id, coverUrl, technologies, name, description, links } = project;
 
   return (
-    <div className="cursor-pointer rounded-2xl  bg-white p-6 ring-1 ring-white/50 transition duration-300 hover:-translate-y-1">
+    <div className="cursor-pointer shadow-md rounded-2xl  bg-white p-6 ring-1 ring-white/50 transition duration-300 hover:-translate-y-1">
       <Zoom key={project._id}>
         <Image
           className="w-full rounded-xl"

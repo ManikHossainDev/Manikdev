@@ -77,7 +77,7 @@ const Page = () => {
                     <div className="space-y-4 text-center">
                       <Image
                         className="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64"
-                        src="https://tailus.io/sources/blocks/classic/preview/images/woman.jpg"
+                        src="https://i.ibb.co.com/NN529CP/closeup-smiling-young-beautiful-indian-woman-1262-2261.jpg"
                         alt="woman"
                         loading="lazy"
                         width="1000"

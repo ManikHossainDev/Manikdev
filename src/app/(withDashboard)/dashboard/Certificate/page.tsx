@@ -5,7 +5,7 @@ import { Fade, Zoom, JackInTheBox, Bounce,Slide, Roll, Hinge, Flip } from "react
 export default function ImageGrid() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-hidden">
-      <Zoom>
+      <Fade direction="left">
         <Image
           alt="Mountain"
           src="https://i.ibb.co/dkWh7JZ/javascript-intermediate-certificate-1.jpg"
@@ -14,7 +14,7 @@ export default function ImageGrid() {
           className="w-full rounded-md h-40"
           layout="responsive"
         />
-      </Zoom>
+      </Fade>
       <Fade direction="down">
         <Image
           alt="Mountain"
@@ -26,7 +26,7 @@ export default function ImageGrid() {
         />
       </Fade>
       
-      <Fade direction="down">
+      <Fade direction="right">
         <Image
           alt="Mountain"
           src="https://i.ibb.co.com/c84FZHy/Md-Manik-Hossain-Postman.jpg"
@@ -46,7 +46,7 @@ export default function ImageGrid() {
           layout="responsive"
         />
       </Bounce>
-      <JackInTheBox>
+      <Zoom>
         <Image
           alt="Mountain"
           src="https://i.ibb.co.com/mTWc0t9/doc.jpg"
@@ -55,8 +55,8 @@ export default function ImageGrid() {
           className="w-full rounded-md h-40"
           layout="responsive"
         />
-      </JackInTheBox>
-      <Slide direction="right">
+      </Zoom>
+      <Bounce>
         <Image
           alt="Mountain"
           src="https://i.ibb.co.com/XjFvzYT/1719518927833.jpg"
@@ -65,8 +65,8 @@ export default function ImageGrid() {
           className="w-full rounded-md h-40"
           layout="responsive"
         />
-      </Slide>
-      <Roll>
+      </Bounce>
+      <Fade direction="left">
         <Image
           alt="Mountain"
           src="https://i.ibb.co.com/zNHPQh9/UX-Fundamentals.jpg"
@@ -75,8 +75,8 @@ export default function ImageGrid() {
           className="w-full rounded-md h-40"
           layout="responsive"
         />
-      </Roll>
-      <Bounce>
+      </Fade>
+      <Fade direction="up">
         <Image
           alt="Mountain"
           src="https://i.ibb.co.com/HKhmSGb/1717565708032-1.jpg"
@@ -85,7 +85,17 @@ export default function ImageGrid() {
           className="w-full rounded-md h-40"
           layout="responsive"
         />
-      </Bounce>
+      </Fade>
+      <Fade direction="right">
+        <Image
+          alt="Mountain"
+          src="https://i.ibb.co.com/xX34LpY/1719519897162.jpg"
+          width='300'
+          height='300'
+          className="w-full rounded-md h-40"
+          layout="responsive"
+        />
+      </Fade>
     </div>
   );
 }
