@@ -8,9 +8,7 @@ import { Typewriter } from "@/components/Typewriter";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const HomePage = () => {
- 
   return (
     <div className="px-2">
       <div className="lg:grid md:grid-cols-12 grid-cols-1 gap-5 pt-5  py-4 ">
@@ -137,7 +135,7 @@ const HomePage = () => {
                   <div>
                     <div className="h-full w-full rounded-[16px] py-10 px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
-                            <Workimag/>
+                        <Workimag />
                       </div>
                       <div>
                         <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
@@ -174,7 +172,7 @@ const HomePage = () => {
                   <div>
                     <div className="h-full w-full rounded-[16px] py-11 px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
-                       <Work_imag/>
+                        <Work_imag />
                       </div>
                       <div>
                         <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
@@ -247,10 +245,7 @@ const HomePage = () => {
                         </div>
                       </Link>
 
-                      <Link
-                        href="https://leetcode.com/u/MdManikHossain"
-                        passHref
-                      >
+                      <Link href="https://leetcode.com/u/SeManik/" passHref>
                         <div className="p-3 rounded-[12px] hover:border-primary-color cursor-pointer transition ease-linear duration-200 delay-100 font-medium bg-[#2d97ee]">
                           <svg
                             width="25"
@@ -295,7 +290,7 @@ const HomePage = () => {
                         </div>
                       </Link>
                     </div>
-                    
+
                     <div className="py-10">
                       <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
                         Stay with me
@@ -330,7 +325,7 @@ const HomePage = () => {
                   <Link href="/Credentials">
                     <div className="h-full w-full rounded-[16px] py-7  px-6 bg-white relative group">
                       <div className="flex items-center justify-center">
-                        <CredentialsPhoto/>
+                        <CredentialsPhoto />
                       </div>
                       <div>
                         <p className="text-xs uppercase font-medium text-[#8a8a8a] sm:mb-1">
@@ -389,19 +384,19 @@ const HomePage = () => {
             <p>
               work <span className="text-[#00BBA6]">together.</span>
             </p>
-              <Pcimage/>
+            <Pcimage />
             <button
-                type="button"
-                aria-haspopup="dialog"
-                aria-expanded="false"
-                aria-controls="radix-:r14:"
-                data-state="closed"
-              >
-                <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-65 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                  <div className="relative">
-                    <div className="absolute w-10 h-10 rounded-full border border-[#00BBA6] hidden group-hover:block animate-ping"></div>
-                    <div className="w-10 h-10 rounded-full border border-black group-hover:border-[#00BBA6] transition-all ease-linear duration-200">
-                      <Link href="/Contact">
+              type="button"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="radix-:r14:"
+              data-state="closed"
+            >
+              <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-65 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
+                <div className="relative">
+                  <div className="absolute w-10 h-10 rounded-full border border-[#00BBA6] hidden group-hover:block animate-ping"></div>
+                  <div className="w-10 h-10 rounded-full border border-black group-hover:border-[#00BBA6] transition-all ease-linear duration-200">
+                    <Link href="/Contact">
                       <span className="flex items-center justify-center mt-2 text-black group-hover:text-[#00BBA6] group-hover:-rotate-45 transition-all ease-linear duration-200">
                         <svg
                           stroke="currentColor"
@@ -415,16 +410,16 @@ const HomePage = () => {
                           <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"></path>
                         </svg>
                       </span>
-                      </Link>
-                    </div>
+                    </Link>
                   </div>
                 </div>
-              </button>
+              </div>
+            </button>
           </div>
         </div>
         <div className="lg:col-span-8 col-span-1 rounded-3xl py-5 overflow-hidden md:px-3 px-2  bg-white  relative group">
           <div className="rounded-[16px] py-10  relative group">
-           <Skills/>
+            <Skills />
           </div>
 
           <div className="mt-2">
@@ -446,19 +441,19 @@ const HomePage = () => {
                 <div className="absolute w-10 h-10 rounded-full border border-[#00BBA6] hidden group-hover:block animate-ping"></div>
                 <div className="w-10 h-10 rounded-full border border-black group-hover:border-[#00BBA6] transition-all ease-linear duration-200">
                   <Link href="/about">
-                  <span className="flex items-center justify-center mt-2 text-black group-hover:text-[#00BBA6] group-hover:-rotate-45 transition-all ease-linear duration-200">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      height="20"
-                      width="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"></path>
-                    </svg>
-                  </span>
+                    <span className="flex items-center justify-center mt-2 text-black group-hover:text-[#00BBA6] group-hover:-rotate-45 transition-all ease-linear duration-200">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        strokeWidth="0"
+                        viewBox="0 0 512 512"
+                        height="20"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"></path>
+                      </svg>
+                    </span>
                   </Link>
                 </div>
               </div>
