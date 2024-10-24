@@ -5,6 +5,7 @@ import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
+import GlowingBtn from "./GlowingBtn";
 
 export const HeroSection = () => {
   return (
@@ -73,12 +74,12 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          {/* <h1 className="font-serif text-3xl md:text-5xl  text-center mt-4 tracking-wide">
-            Building Exceptional User Experiences
-          </h1> */}
           <p className="mt-4 text-center text-gray-400 md:text-lg">
           hello welcome to my website i am md manik hossain efficient mern stack developer teak a moment to explore discover my project and learn  more about my journey I hope  enjoy your visite Thank you
           </p>
+            <h1>
+            <GlowingBtn/>
+            </h1>
         </div>
         {/* <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">

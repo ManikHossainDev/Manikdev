@@ -16,7 +16,7 @@ const CredentialsPhoto = () => {
             />
             <h2 className="text-xl font-semibold mt-4">Manik Hossain</h2>
             <Link
-              href="https://drive.google.com/file/d/1a8vMSUTFnmM2HpjSAPkiJRxMDntR8C1y/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Q7afFoP430A4QZjQKzIE3CE1lpz61G5G/view?usp=drive_link"
               passHref
             >
               <span
