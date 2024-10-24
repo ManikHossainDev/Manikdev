@@ -33,7 +33,7 @@ export default async function RootLayout({
         )}
       >
         <Navbar session={session} />
-        <div className="container mx-auto">
+        <div className="container  mx-auto px-3 md:px-0">
           {children}
         </div>
         <FooterPage />

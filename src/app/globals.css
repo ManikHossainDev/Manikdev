@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* Your custom base styles... */
+  .hero-ring {
+      @apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/10 shadow-[0_0_80px_inset] shadow-emerald-300/50;
+  }
+}
+
+
 body {
      font-family: "Oswald", sans-serif;;
 }

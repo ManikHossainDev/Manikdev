@@ -29,7 +29,7 @@ export default function ProjectsPage() {
   return (
     <main className="container my-10">
       {/* <Heading>My Works.</Heading> */}
-      <div className="mt-6 grid gap-5 md:grid-cols-2 px-2">
+      <div className="mt-6 grid gap-10 md:grid-cols-2 px-2">
         {projects.map((project:TProject) => (
           <ProjectCard key={project.name} {...project} technologies={project.technologies.filter((tech): tech is string => !!tech)}/>
         ))}

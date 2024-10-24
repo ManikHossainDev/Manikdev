@@ -42,19 +42,20 @@ const RegisterPage = () => {
 
   
   return (
-    <div className="my-10">
-    <h1 className="text-center text-3xl md:text-4xl mb-5">
-      Register <span className="text-accent">Now</span>
-    </h1>
+    <div className="py-5 md:mt-20 m-2 mx-2">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-    <div className="card flex justify-center shadow-xl bg-base-100 rounded-md">
+    <div className="card flex justify-center shadow-xl bg-base-100 ">
+    
         <Lottie
           className="h-[300px] md:h-[400px] w-full md:w-full"
           animationData={zAnimate}
           loop={true}
          />
-      </div>
-      <div className="card w-full md:w-[80%] lg:w-[90%] mx-auto shadow-xl bg-base-100">
+    </div>
+      <div className="card w-full  mx-auto shadow-xl bg-base-100">
+      <h1 className="text-center text-3xl md:text-4xl pt-5">
+       <span className="text-gray-400">Register Now</span>
+    </h1>
         <form onSubmit={handleSubmit(onSubmit)} className="card-body py-3">
           <div className="form-control">
             <label className="label">

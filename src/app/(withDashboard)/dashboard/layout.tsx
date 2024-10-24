@@ -13,11 +13,11 @@ export default function DashboardLayout({
 }>) {
   return (
     <div className=" my-2 ">
-      <div className="flex flex-col md:flex-row justify-between space-y-3">
-        <div className="w-[100%] md:w-[20%]">
+      <div className="flex flex-col md:flex-row justify-between space-y-3 ">
+        <div className="w-[100%] md:w-[15%] md:mx-2">
           <Sidebar />
         </div>
-        <div className="w-[100%] md:w-[80%] rounded-box p-5">{children}</div>
+        <div className="w-[100%] md:w-[85%] rounded-box p-5">{children}</div>
       </div>
     </div>
   );

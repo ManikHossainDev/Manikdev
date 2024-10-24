@@ -1,10 +1,9 @@
 import Link from "next/link";
-
 const Sidebar = () => {
   return (
-    <div className="p-5">
-      <ul className="menu rounded-box">
-        <li>
+    <div className="sticky top-24   grid grid-cols-3 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-1  md:gap-1">
+      <ul className="menu md:-mb-4 rounded-box flex ">
+        <li className="md:mb-7">
           <Link href="/dashboard">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -20,10 +19,10 @@ const Sidebar = () => {
                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
               />
             </svg>
-             Studio
+            Studio
           </Link>
         </li>
-        <li>
+        <li className="md:mb-7">
           <Link href="/dashboard/userinfo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +41,7 @@ const Sidebar = () => {
             Profile
           </Link>
         </li>
-        <li>
+        <li className="md:pb-9">
           <Link href="/dashboard/Course">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -58,10 +57,12 @@ const Sidebar = () => {
                 d="M12 3v18m0-18c-4 1-8 1-10 4v11c2-3 6-3 10-4m0 18c4-1 8-1 10-4V7c-2 3-6 3-10 4"
               />
             </svg>
-            Course 
+            Course
           </Link>
         </li>
-        <li>
+      </ul>
+      <ul className="menu md:-mt-4 md:-mb-4 rounded-box">
+        <li className="md:mb-7">
           <Link
             href="/dashboard/myblogs
           "
@@ -80,10 +81,10 @@ const Sidebar = () => {
               <path d="M18 20v-5h-2a1 1 0 00-1 1v5a1 1 0 001 1h4a1 1 0 001-1v-5a1 1 0 00-1-1h-2v5z" />
               <path d="M8 10h4M8 14h4" />
             </svg>
-            My Blogs
+            My_Blogs
           </Link>
         </li>
-        <li>
+        <li className="md:mb-7">
           <Link
             href="/dashboard/team
           "
@@ -105,10 +106,10 @@ const Sidebar = () => {
                 <path d="M42 42c0-3.31 2.69-6 6-6s6 2.69 6 6v6H42v-6z" />
               </g>
             </svg>
-            Our Team 
+            Our_Team
           </Link>
         </li>
-        <li>
+        <li className="md:pb-9">
           <Link href="/dashboard/Certificate">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -142,10 +143,12 @@ const Sidebar = () => {
                 strokeWidth="2"
               />
             </svg>
-            Certificate
+            Certified
           </Link>
         </li>
-        <li>
+      </ul>
+      <ul className="menu md:-mt-4 rounded-box">
+        <li className="md:mb-7">
           <Link href="/dashboard/bangladesh">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -159,10 +162,10 @@ const Sidebar = () => {
                 clipRule="evenodd"
               />
             </svg>
-            Bangla Map
+            Country
           </Link>
         </li>
-        <li>
+        <li className="md:mb-7">
           <Link href="/dashboard/settings">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -179,6 +182,27 @@ const Sidebar = () => {
               />
             </svg>
             Success
+          </Link>
+        </li>
+        <li className="md:mb-9">
+          <Link href="/dashboard/gallery">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="gallery-icon h-5 w-5"
+              width="50"
+              height="50"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="M21 15l-5-5L5 21" />
+            </svg>
+            Gallery
           </Link>
         </li>
       </ul>

@@ -36,11 +36,10 @@ const Download = () => {
   return (
     <button
       onClick={downloadFile}
-      className="absolute bg-[#00BBA6] flex px-3 py-1 rounded-md top-2 right-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+      className="absolute bg-[#00BBA6] ml-10 flex px-3 py-1 rounded-md top-2  opacity-0 transition-opacity duration-300 group-hover:opacity-100"
       disabled={downloading}
     >
-      {downloading ? "Downloading..." : "Download CV"}{" "}
-      <ArrowBigDownDashIcon/>
+      {downloading ? "Downloading..." : "Download CV"} <ArrowBigDownDashIcon />
     </button>
   );
 };

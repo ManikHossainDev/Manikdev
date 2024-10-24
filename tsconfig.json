@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/loading.tsxsss"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/loading.tsxsss", "src/app/(withDashboard)/dashboard/Course/components/CustomNode.tsx", "src/app/(withDashboard)/dashboard/Course/components/tailwind-config.js"],
   "exclude": ["node_modules"]
 }

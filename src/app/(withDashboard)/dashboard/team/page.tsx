@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Zoom } from "react-awesome-reveal";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +14,10 @@ const Page = () => {
             Join Us Today!
           </h2>
           <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-3xl mx-auto">
-            Join our comprehensive Web Design Course and learn the essential skills to create stunning and responsive websites. From the fundamentals to advanced techniques, this course is designed for both beginners and those looking to enhance their skills.
+            Join our comprehensive Web Design Course and learn the essential
+            skills to create stunning and responsive websites. From the
+            fundamentals to advanced techniques, this course is designed for
+            both beginners and those looking to enhance their skills.
           </p>
           <Link
             href="/login"
@@ -117,7 +120,7 @@ const Page = () => {
         </div>
 
         {/* Why Us Section */}
-        <div className="backdrop-blur-md bg-opacity-30 bg-white p-10 rounded-3xl shadow-xl mb-16">
+        {/* <div className="backdrop-blur-md bg-opacity-30 bg-white p-10 rounded-3xl shadow-xl mb-16">
           <h2 className="text-3xl font-bold text-[#00BBA6] mb-6">
             Why Choose Us?
           </h2>
@@ -143,7 +146,7 @@ const Page = () => {
               real-time collaboration for modern web design.
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );

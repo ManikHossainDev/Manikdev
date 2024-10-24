@@ -1,5 +1,5 @@
 "use client";
-import {  Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -19,16 +19,16 @@ export function ProjectCard(project: TProject) {
           alt="Project_Cover"
         />
       </Zoom>
-        <div className="mt-6 flex flex-wrap gap-3">
-          {technologies.map((technology) => (
-            <span
-              className="flex-1 whitespace-nowrap rounded-md bg-slate-200 px-3 py-1  text-center text-xs font-semibold"
-              key={technology}
-            >
-              {technology}
-            </span>
-          ))}
-        </div>
+      <div className="mt-6 flex flex-wrap gap-3">
+        {technologies.map((technology) => (
+          <span
+            className="flex-1 whitespace-nowrap rounded-md bg-slate-200 px-3 py-1  text-center text-xs font-semibold"
+            key={technology}
+          >
+            {technology}
+          </span>
+        ))}
+      </div>
       <h3 className="mt-8 text-2xl font-bold uppercase tracking-wider">
         {name}
       </h3>

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Account from "./components/account";
+import Socialmedia from "../components/socialmedia";
 
 export const metadata: Metadata = {
   title: "Manik | Contact",
@@ -8,18 +9,19 @@ export const metadata: Metadata = {
 };
 /* eslint-disable react/no-unescaped-entities */
 const ContactPage = () => {
- 
   return (
     <div className="px-2">
       <div className="max-w-7xl md:mx-auto pb-24 py-14 mx-2 ">
         <div className="grid grid-cols-1 md:grid-cols-6  lg:grid-cols-12 gap-24 p-5">
           {/* Left Section */}
           <div className="col-span-1 md:col-span-6  lg:col-span-4">
-            <h1 className="text-2xl font-bold font-butler">Contact Me</h1>
+            <h1 className="text-2xl font-bold font-butler text-[#00BBA6]">
+              Contact Me
+            </h1>
             <div className="mt-5 space-y-5 md:space-y-10">
               {/* Email Section */}
               <div className="flex items-center space-x-4">
-                <div className="p-4 rounded-lg border border-[#00BBA6] cursor-pointer text-xl">
+                <div className="p-4 rounded-lg border border-black/25 cursor-pointer text-xl">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -41,7 +43,7 @@ const ContactPage = () => {
 
               {/* Phone Section */}
               <div className="flex items-center space-x-4">
-                <div className="p-4 rounded-lg border border-[#00BBA6] cursor-pointer text-xl">
+                <div className="p-4 rounded-lg border border-black/25 cursor-pointer text-xl">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -62,7 +64,7 @@ const ContactPage = () => {
 
               {/* Location Section */}
               <div className="flex items-center space-x-4">
-                <div className="p-4 rounded-lg border border-[#00BBA6] cursor-pointer text-xl">
+                <div className="p-4 rounded-lg border border-black/25 cursor-pointer text-xl">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -83,46 +85,14 @@ const ContactPage = () => {
             </div>
 
             {/* Social Media Links */}
-            <div className="mt-10">
-              <div className="border border-black/25 rounded-3xl py-10 px-3 relative group w-full h-full">
+            <div className="mt-8">
+              <div className="border border-black/25 rounded-3xl py-5 px-3 relative group w-full h-full">
                 <div className="p-5">
-                  <Account/>
+                  <Account />
                 </div>
-                <div className="mt-7">
-                  <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
-                    Stay with me
-                  </p>
-                  <p className="text-2xl font-semibold font-butler">Profiles</p>
+                <div className="">
+                  <Socialmedia/>
                 </div>
-
-                <button
-                  type="button"
-                  aria-haspopup="dialog"
-                  aria-expanded="false"
-                  aria-controls="radix-:r14:"
-                  data-state="closed"
-                >
-                  <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-65 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                    <div className="relative">
-                      <div className="absolute w-10 h-10 rounded-full border border-[#00BBA6] hidden group-hover:block animate-ping"></div>
-                      <div className="w-10 h-10 rounded-full border border-black group-hover:border-[#00BBA6] transition-all ease-linear duration-200">
-                        <span className="flex items-center justify-center mt-2 text-black group-hover:text-[#00BBA6] group-hover:-rotate-45 transition-all ease-linear duration-200">
-                          <svg
-                            stroke="currentColor"
-                            fill="currentColor"
-                            strokeWidth="0"
-                            viewBox="0 0 512 512"
-                            height="20"
-                            width="20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z"></path>
-                          </svg>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </button>
               </div>
             </div>
           </div>
@@ -131,8 +101,7 @@ const ContactPage = () => {
             <div className="rounded-3xl p-5 md:p-10 bg-gray-100 bg-opacity-55 border border-black/25 relative">
               <div className="text-2xl md:text-4xl font-[700] leading-tight font-butler">
                 <p>
-                  Let's work{" "}
-                  <span className="text-[#00BBA6]">together.</span>
+                  Let's work <span className="text-[#00BBA6]">together.</span>
                 </p>
               </div>
               <form className="md:mt-8 mt-14">
@@ -214,7 +183,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

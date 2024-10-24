@@ -52,7 +52,7 @@ export default function ImageGrid() {
           src="https://i.ibb.co.com/mTWc0t9/doc.jpg"
           width='300'
           height='300'
-          className="w-full rounded-md h-40"
+          className="w-full rounded-md h-40 animate-custom-bounce"
           layout="responsive"
         />
       </Zoom>

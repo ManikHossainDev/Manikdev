@@ -75,7 +75,7 @@ const Skills = () => {
             <div className="flex items-center justify-start h-20 rounded-xl text-gray-800  bg-gradient-to-l  to-zinc-50 dark:bg-gradient-to-l   ring-1 ring-stone-200 dark:ring-stone-400 select-none group">
               <span className="-mt-20 ml-6 bg-zinc-50  ring-1 ring-stone-200 dark:ring-stone-400 rounded-xl rotate-45 duration-200">
                 <FaReact
-                  className="w-10 h-10 p-2 -rotate-45 group-hover:p-1.5 rounded-xl duration-200 animate-spin"
+                  className="w-10 h-10 p-2  group-hover:p-1.5 rounded-xl duration-200 animate-spin"
                   aria-hidden="true"
                 />
               </span>
@@ -213,7 +213,7 @@ const Skills = () => {
             <div className="flex items-center justify-start h-20 rounded-xl text-gray-800  bg-gradient-to-l  to-zinc-50 dark:bg-gradient-to-l   ring-1 ring-stone-200 dark:ring-stone-400 select-none group">
               <span className="-mt-20 ml-6 bg-zinc-50  ring-1 ring-stone-200 dark:ring-stone-400 rounded-xl rotate-45 duration-200">
                 <SiRedux
-                  className="w-10 h-10 p-2 -rotate-45 group-hover:p-1.5 rounded-xl duration-200"
+                  className="w-10 h-10 p-2  animate-spin group-hover:p-1.5 rounded-xl duration-200"
                   aria-hidden="true"
                 />
               </span>
@@ -285,7 +285,7 @@ const Skills = () => {
             <div className="flex items-center justify-start h-20 rounded-xl text-gray-800  bg-gradient-to-l  to-zinc-50 dark:bg-gradient-to-l   ring-1 ring-stone-200 dark:ring-stone-400 select-none group">
               <span className="-mt-20 ml-6 bg-zinc-50  ring-1 ring-stone-200 dark:ring-stone-400 rounded-xl rotate-45 duration-200">
                 <SiJsonwebtokens
-                  className="w-10 h-10 p-2 -rotate-45 group-hover:p-1.5 rounded-xl duration-200 animate-spin"
+                  className="w-10 h-10 p-2  group-hover:p-1.5 rounded-xl duration-200 animate-spin"
                   aria-hidden="true"
                 />
               </span>

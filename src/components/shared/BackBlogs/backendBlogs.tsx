@@ -27,8 +27,31 @@ const BackendBlogs = (blog: TBlogS) => {
           <h1 className="text-2xl pt-1">{title}</h1>
           <p className="text-gray-500">{description.substring(0, 120)}</p>
           <div className="flex justify-between pt-1 ">
-            <p className="text-[#00BBA6]">Rating : {303}</p>
-            <p className=" text-[#00BBA6]">Review : {502}</p>
+            <div className="flex items-center">
+              <div className="text-[#00BBA6]">Rating :</div>
+              <div className="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-200"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-200"
+                  defaultChecked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-200"
+                />
+              </div>
+            </div>
+            <div>
+              {" "}
+              <span className="text-[#00BBA6]">Review :</span> 533
+            </div>
           </div>
         </div>
       </div>

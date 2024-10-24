@@ -2,10 +2,17 @@ import { TEducation } from '@/lib/types';
 
 export const educations: TEducation[] = [
   {
+    degreeName: 'Full Stack Developer',
+    year: '01-05-2024 - Present',
+    institution: 'Universe Soft Tech',
+    obtainedCgpa: 0,
+    totalCgpa: 0,
+  },
+  {
     degreeName: 'B.Sc. Engineering in CSE',
     year: '2025 - Present',
     institution: 'Dhaka International University ',
-    obtainedCgpa: 3.20,
+    obtainedCgpa: 0,
     totalCgpa: 4.0,
   },
   {
@@ -22,4 +29,5 @@ export const educations: TEducation[] = [
     obtainedCgpa: 4.89,
     totalCgpa: 5.0,
   },
+  
 ];

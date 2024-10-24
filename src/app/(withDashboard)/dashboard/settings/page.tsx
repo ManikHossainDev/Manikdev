@@ -1,11 +1,27 @@
-"use client"
-"use client"
-import React, { useState, useEffect } from 'react';
-import { Bar, Doughnut, Line } from 'react-chartjs-2';
-import { Chart, ArcElement, CategoryScale, LinearScale, BarElement, PointElement, LineElement } from 'chart.js';
-import { motion } from 'framer-motion';
+"use client";
+"use client";
+import React, { useState, useEffect } from "react";
+import { Bar, Doughnut, Line } from "react-chartjs-2";
+import {
+  Chart,
+  ArcElement,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  PointElement,
+  LineElement,
+} from "chart.js";
+import { motion } from "framer-motion";
+import { TestimonialsSection } from "./Components/TestimonialsSection";
 
-Chart.register(ArcElement, CategoryScale, LinearScale, BarElement, PointElement, LineElement);
+Chart.register(
+  ArcElement,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  PointElement,
+  LineElement
+);
 
 const SuccessChartList = () => {
   // State to manage live chart data
@@ -17,9 +33,15 @@ const SuccessChartList = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       // Update data randomly for simulation purposes
-      setBarData(barData.map(data => data + Math.round(Math.random() * 10 - 5)));
-      setLineData(lineData.map(data => data + Math.round(Math.random() * 10 - 5)));
-      setDoughnutData(doughnutData.map(data => data + Math.round(Math.random() * 10 - 5)));
+      setBarData(
+        barData.map((data) => data + Math.round(Math.random() * 10 - 5))
+      );
+      setLineData(
+        lineData.map((data) => data + Math.round(Math.random() * 10 - 5))
+      );
+      setDoughnutData(
+        doughnutData.map((data) => data + Math.round(Math.random() * 10 - 5))
+      );
     }, 2000); // Update every 2 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
@@ -27,119 +49,107 @@ const SuccessChartList = () => {
 
   // Chart configurations with dynamic data
   const barChartData = {
-    labels: ['January', 'February', 'March', 'April', 'May'],
+    labels: ["January", "February", "March", "April", "May"],
     datasets: [
       {
-        label: 'Success Rate',
+        label: "Success Rate",
         data: barData,
-        backgroundColor: 'rgba(75,192,192,0.6)',
-        borderColor: 'rgba(75,192,192,1)',
+        backgroundColor: "rgba(75,192,192,0.6)",
+        borderColor: "rgba(75,192,192,1)",
         borderWidth: 1,
       },
     ],
   };
 
   const doughnutChartData = {
-    labels: ['Success', 'Failure', 'Pending'],
+    labels: ["Success", "Failure", "Pending"],
     datasets: [
       {
         data: doughnutData,
-        backgroundColor: ['#36A2EB', '#FF6384', '#FFCE56'],
-        hoverBackgroundColor: ['#36A2EB', '#FF6384', '#FFCE56'],
+        backgroundColor: ["#36A2EB", "#FF6384", "#FFCE56"],
+        hoverBackgroundColor: ["#36A2EB", "#FF6384", "#FFCE56"],
       },
     ],
   };
 
   const lineChartData = {
-    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+    labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
     datasets: [
       {
-        label: 'Weekly Success',
+        label: "Weekly Success",
         data: lineData,
         fill: false,
-        backgroundColor: 'rgba(255,99,132,0.6)',
-        borderColor: 'rgba(255,99,132,1)',
+        backgroundColor: "rgba(255,99,132,0.6)",
+        borderColor: "rgba(255,99,132,1)",
       },
     ],
   };
 
-  // Sample student data (10 random images)
-  const students = [
-    { id: 1, name: 'John Doe', img: 'https://randomuser.me/api/portraits/men/1.jpg' },
-    { id: 2, name: 'Jane Smith', img: 'https://randomuser.me/api/portraits/women/2.jpg' },
-    { id: 3, name: 'Michael Jon', img: 'https://randomuser.me/api/portraits/men/3.jpg' },
-    { id: 4, name: 'Emily Davis', img: 'https://randomuser.me/api/portraits/women/4.jpg' },
-    { id: 5, name: 'David Brown', img: 'https://randomuser.me/api/portraits/men/5.jpg' },
-    // { id: 6, name: 'Emma Wilson', img: 'https://randomuser.me/api/portraits/women/6.jpg' },
-    // { id: 7, name: 'Daniel Lee', img: 'https://randomuser.me/api/portraits/men/7.jpg' },
-    // { id: 8, name: 'Olivia Harris', img: 'https://randomuser.me/api/portraits/women/8.jpg' },
-    // { id: 9, name: 'Chris Walker', img: 'https://randomuser.me/api/portraits/men/9.jpg' },
-    // { id: 10, name: 'Sophia King', img: 'https://randomuser.me/api/portraits/women/10.jpg' },
-  ];
+  
 
   return (
-    <motion.div 
-      className="container mx-auto p-4"
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
-      exit={{ opacity: 0 }} 
+    <motion.div
+      className="container mx-auto px-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-3xl font-bold text-center text-[#00BBA6] mb-6">Live Success Metrics</h2>
+      <h2 className="text-3xl font-bold text-center text-[#00BBA6] mb-6">
+        Live Success Metrics
+      </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Bar Chart */}
-        <motion.div 
-          className=" shadow-lg rounded-lg p-6"
-          whileHover={{ scale: 1.05 }} 
+        <motion.div
+          className=" shadow-lg rounded-lg p-6 bg-white"
+          whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
-          <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">Monthly Success Rate</h3>
-          <Bar data={barChartData} options={{ responsive: true, animation: { duration: 1000 } }} />
+          <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">
+            Monthly Success Rate
+          </h3>
+          <Bar
+            data={barChartData}
+            options={{ responsive: true, animation: { duration: 1000 } }}
+          />
         </motion.div>
 
         {/* Doughnut Chart */}
-        <motion.div 
-          className=" shadow-lg rounded-lg p-6"
-          whileHover={{ scale: 1.05 }} 
+        <motion.div
+          className=" shadow-lg rounded-lg p-6 bg-white"
+          whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
-          <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">Overall Success Distribution</h3>
-          <Doughnut data={doughnutChartData} options={{ responsive: true, animation: { duration: 1000 } }} />
+          <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">
+            Overall Success Distribution
+          </h3>
+          <Doughnut
+            data={doughnutChartData}
+            options={{ responsive: true, animation: { duration: 1000 } }}
+          />
         </motion.div>
 
         {/* Line Chart */}
-        <motion.div 
-          className=" shadow-lg rounded-lg p-6"
-          whileHover={{ scale: 1.05 }} 
+        <motion.div
+          className=" shadow-lg rounded-lg p-6 bg-white"
+          whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
-          <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">Weekly Success Trends</h3>
-          <Line data={lineChartData} options={{ responsive: true, animation: { duration: 1000 } }} />
+          <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">
+            Weekly Success Trends
+          </h3>
+          <Line
+            data={lineChartData}
+            options={{ responsive: true, animation: { duration: 1000 } }}
+          />
         </motion.div>
       </div>
-      <h2 className="text-3xl mt-3 font-bold text-center text-[#00BBA6] py-7">Success Student</h2>
+      <h2 className="text-3xl mt-3 font-bold text-center text-[#00BBA6] pt-4">
+        Success Student
+      </h2>
       {/* Student List with Hover Effect */}
-      <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-          {students.map((student) => (
-            <motion.div
-              key={student.id}
-              className=" shadow-lg rounded-lg overflow-hidden p-4 text-center"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.3 }}
-            >
-              <img
-                src={student.img}
-                alt={student.name}
-                className="w-24 h-24 rounded-full mx-auto mb-4 transition-all"
-              />
-              <h3 className="text-lg font-semibold text-gray-700">{student.name}</h3>
-              <p className='text-gray-400'>Web Developer</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+      <TestimonialsSection/>
     </motion.div>
   );
 };

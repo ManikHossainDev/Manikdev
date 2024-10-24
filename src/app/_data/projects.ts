@@ -72,29 +72,30 @@ export const projects = [
   },
   {
     _id: "P-4",
-    name: "People Sync",
-    coverUrl: "https://i.ibb.co/LPSf4kc/people-synch.png",
-    description: `<p>This efficient recruiting tracking app streamlines the hiring process for administrators. Admins can create job postings and track applications from candidates who can apply without creating an account. The app allows admins to review applications, update candidate statuses, and manage the entire recruitment process seamlessly.
+    name: "Recipe Sharing",
+    coverUrl: "https://i.ibb.co.com/7kMNBNc/Screenshot-2024-10-20-144742.png",
+    description: `<p>The Recipe Sharing Community is a full-stack web application aimed at bringing together cooking enthusiasts, providing a platform where users can share, discover, and organize recipes. Targeting home cooks, culinary students, and anyone passionate about cooking, the platform allows users to post favorite recipes, contribute interactive ingredient checklists, and share cooking time estimates. The community fosters sharing culinary knowledge, supporting social engagement.
     </p>
     <h3><strong>Features : </strong></h3>
     <ul>
-    <li><p>Admin can create job postings.</p></li>
-    <li><p>Candidates can apply without creating any account.</p></li>
-    <li><p>Admin can review and manage applications.</p></li>
-    <li><p>Status updates for candidate applications.</p></li>
-    <li><p>Streamlined recruitment tracking and management.</p></li>
+    <li><p>Admin Controls: Admins can block/unblock users, delete accounts, </p></li>
+    <li><p>Rating, Commenting & Upvote/Downvote System</p></li>
+    <li><p>User Authentication & Authorization</p></li>
+    <li><p> User Profile Management</p></li>
+    <li><p>Recipe Management</p></li>
     </ul>`,
     links: {
-      client: "#",
-      server: "#",
-      live: "https://people-sync.vercel.app/",
+      client: "https://github.com/Programmer-Manik/RecipeSharingCommunity_Client.git",
+      server: "https://github.com/Programmer-Manik/RecipeSharingCommunity_Server.git",
+      live: "https://recipe-sharing-community-client.vercel.app/",
     },
     technologies: [
-      "ReactJs",
+      "TypeScript",
+      "Next.js",
       "Redux ToolKit",
-      "RTK Query",
+      "AmmarPay",
       "TailwindCss",
-      "ShadCn-Ui",
+      "Next-Ui",
       "ExpressJs",
       "MongoDb",
       "Mongoose",

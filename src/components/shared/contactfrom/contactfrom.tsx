@@ -1,4 +1,4 @@
-"use client"
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 import { sendEmail } from "@/app/_actions/send-email";
 import { FormEvent, useState } from "react";

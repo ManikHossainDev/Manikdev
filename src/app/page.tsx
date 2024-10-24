@@ -1,5 +1,7 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 import CredentialsPhoto from "@/components/CredentialsPhoto/CredentialsPhoto";
+import Modal from "@/components/shared/myModal";
 import Pcimage from "@/components/shared/pcimage";
 import Skills from "@/components/shared/skills";
 import Work_imag from "@/components/shared/work-imag";
@@ -7,21 +9,35 @@ import Workimag from "@/components/shared/workimag";
 import { Typewriter } from "@/components/Typewriter";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import Socialmedia from "./components/socialmedia";
+import { HeroSection } from "@/components/HeroSectionContact";
+import { AboutSection } from "./components/mytools";
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <div className="px-2">
-      <div className="lg:grid md:grid-cols-12 grid-cols-1 gap-5 pt-5  py-4 ">
-        <div className="md:col-span-6 pb-2 col-span-1">
+      <div className="lg:grid md:grid-cols-12 grid-cols-1 gap-5 pt-5  py-4 my-5">
+        <div className="md:col-span-6 pb-2 col-span-1 ">
           <div className="w-full h-full bg-white rounded-[16px] relative pb-20 md:pb-2">
             <div className="flex md:flex-col flex-col ml-5  space-y-3">
               <div className="flex flex-col items-start space-y-2">
                 <Image
                   alt="person"
-                  src="https://itznur07-personal-web.vercel.app/_next/static/media/undraw_coding.6ff70534.svg"
-                  width="350"
-                  height="350"
-                  className="mt-10"
+                  src="https://pbs.twimg.com/profile_images/1834214792417923072/3fxHzXGX_400x400.jpg"
+                  width="206"
+                  height="206"
+                  className="mt-7 ms-1 rounded-3xl  transition hero-img"
                   priority
                 />
                 <span className="md:text-3xl text-2xl font-[700] mt-10 md:mt-32 flex items-center gap-3 text-[#00BBA6]">
@@ -98,7 +114,7 @@ const HomePage = () => {
                   </button>
                 </div>
               </div>
-              <div className="group md:pb-10 md:pt-10 py-5">
+              <div className="group md:pb-10 md:pt-10 md:py-5">
                 <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100">
                   <Link href="/about">
                     <div className="relative">
@@ -209,7 +225,7 @@ const HomePage = () => {
               <div className="grid grid-cols-1 md:grid-cols-8   mt-3  gap-5">
                 <div className="col-span-1  md:col-span-4  lg:col-span-4">
                   <div className="py-10 group bg-white rounded-[16px]  px-6 relative group w-full h-full">
-                    <div className="flex justify-center  rounded-3xl md:p-5 p-1 items-center md:space-x-2 ">
+                    <div className="flex justify-center  rounded-3xl  md:p-5 p-1 items-center space-x-2 ">
                       <Link
                         href="https://www.linkedin.com/in/devmanik/"
                         passHref
@@ -290,82 +306,55 @@ const HomePage = () => {
                         </div>
                       </Link>
                     </div>
-
-                    <div className="py-10">
-                      <p className="text-xs uppercase font-medium text-[#8a8a8a] mb-2">
-                        Stay with me
-                      </p>
-                      <p className="text-2xl font-semibold">Profiles</p>
-                    </div>
-                    <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                      <Link href="#">
-                        <div className="flex items-center justify-center w-16 h-8 rounded-[16px] border border-black transition-all ease-linear duration-200">
-                          <span className="flex items-center justify-center text-black group-hover:rotate-45 transition-all ease-linear duration-200">
-                            <svg
-                              stroke="currentColor"
-                              fill="currentColor"
-                              strokeWidth="0"
-                              viewBox="0 0 24 24"
-                              height="16"
-                              width="16"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path>
-                            </svg>
-                          </span>
-                          <span className="text-black font-[400] text-sm">
-                            View
-                          </span>
-                        </div>
-                      </Link>
-                    </div>
+                    <Socialmedia />
                   </div>
                 </div>
                 <div className="col-span-1 md:col-span-4  lg:col-span-4">
-                  <Link href="/Credentials">
-                    <div className="h-full w-full rounded-[16px] py-7  px-6 bg-white relative group">
-                      <div className="flex items-center justify-center">
-                        <CredentialsPhoto />
-                      </div>
-                      <div>
-                        <p className="text-xs uppercase font-medium text-[#8a8a8a] sm:mb-1">
-                          More about me
-                        </p>
-                        <p className="text-base md:text-lg lg:text-xl font-semibold text-clip">
-                          Credentials
-                        </p>
-                      </div>
-                      <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                        <Link href="/Credentials">
-                          <div className="flex items-center justify-center w-16 h-8 rounded-[16px] border border-black transition-all ease-linear duration-200">
-                            <span className="flex items-center justify-center text-black group-hover:rotate-45 transition-all ease-linear duration-200">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth="0"
-                                viewBox="0 0 24 24"
-                                height="16"
-                                width="16"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path>
-                              </svg>
-                            </span>
-                            <span className="text-black font-[400] text-sm">
-                              View
-                            </span>
-                          </div>
-                        </Link>
-                      </div>
+                  <div className="h-full w-full rounded-[16px] py-7  px-6 bg-white relative group">
+                    <div className="flex items-center justify-center">
+                      <CredentialsPhoto />
                     </div>
-                  </Link>
+                    <div>
+                      <p className="text-xs uppercase font-medium text-[#8a8a8a] sm:mb-1">
+                        More about me
+                      </p>
+                      <p className="text-base md:text-lg lg:text-xl font-semibold text-clip">
+                        Credentials
+                      </p>
+                    </div>
+                    <button
+                      onClick={openModal}
+                      className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group"
+                    >
+                      <div className="flex items-center justify-center w-16 h-8 rounded-[16px] border border-black transition-all ease-linear duration-200">
+                        <span className="flex items-center justify-center text-black group-hover:rotate-45 transition-all ease-linear duration-200">
+                          <svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            strokeWidth="0"
+                            viewBox="0 0 24 24"
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path>
+                          </svg>
+                        </span>
+                        <span className="text-black font-[400] text-sm">
+                          View
+                        </span>
+                      </div>
+                    </button>
+                    <Modal isOpen={isModalOpen} onClose={closeModal} />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-12 grid-cols-1 gap-5 pb-5">
+
+      <div className="grid lg:grid-cols-12 grid-cols-1 gap-5 pb-5 my-5">
         <div className="lg:col-span-4 col-span-1 rounded-3xl py-16 md:py-[70px] px-6  bg-white   relative group">
           <div className="absolute top-1.5 left-0">
             <Image
@@ -461,6 +450,10 @@ const HomePage = () => {
           </button>
         </div>
       </div>
+      <div className="bg-white  w-full rounded-3xl my-5">
+        <HeroSection />
+      </div>
+      <div className="my-3"><AboutSection/></div>
     </div>
   );
 };
