@@ -77,7 +77,7 @@ export const HeroSection = () => {
           <p className="mt-4 text-center text-gray-400 md:text-lg">
           hello welcome to my website i am md manik hossain efficient mern stack developer teak a moment to explore discover my project and learn  more about my journey I hope  enjoy your visite Thank you
           </p>
-            <h1>
+            <h1 className="pt-2">
             <GlowingBtn/>
             </h1>
         </div>

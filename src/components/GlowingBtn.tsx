@@ -1,31 +1,32 @@
+import Link from 'next/link';
 import './glowingBtn.css'
 
 const GlowingBtn = () => {
     return (
-        <a href="/resume.pdf" download>
+        <Link href="/dashboard" className='ml-16 '>
             <button className='glowing-btn'>
                 <span className='glowing-txt'>
-                    D
+                    Mr
                     <span className='faulty-letter'>
-                        O
+                        M
                     </span>
-                    WNL
+                    an
                     <span className='faulty-letter'>
-                        OAD
+                    ik   
                     </span>
                 </span>
                 <span className='glowing-txt'>
-                    &nbsp; &nbsp;R
+                    &nbsp; &nbsp;H
                     <span className='faulty-letter'>
-                        E
+                    o
                     </span>
-                    SUM
+                    ssa
                     <span className='faulty-letter'>
-                        E
+                    in
                     </span>
                 </span>
             </button>
-        </a>
+        </Link>
     );
 };
 
