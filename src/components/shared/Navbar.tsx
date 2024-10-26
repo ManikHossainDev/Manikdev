@@ -61,8 +61,8 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
                 </Link>
               </li>
               <li>
-                <Link href="/FrontBlog" onClick={() => setDropdownOpen(false)}>
-                  Blog
+                <Link href="/Blogs" onClick={() => setDropdownOpen(false)}>
+                  Blogs
                 </Link>
               </li>
               <li>
@@ -99,7 +99,7 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
             <Link href="/Projects">Projects</Link>
           </li>
           <li>
-            <Link href="/FrontBlog">Blogs</Link>
+            <Link href="/Blogs">Blogs</Link>
           </li>
           <li>
             <Link href="/Contact">Contact</Link>

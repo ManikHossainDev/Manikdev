@@ -1,31 +1,36 @@
 "use client";
-import { TBlogS } from "@/app/(Blogs)/BackBlog/page";
 import Image from "next/image";
-import { useState } from "react";
 import { JackInTheBox } from "react-awesome-reveal";
-const BackendBlogs = (blog: TBlogS) => {
-  const [showModal, setShowModal] = useState(false);
-  const [blogId, setBlogId] = useState<string | null>(null);
-  const handleShowModal = () => {
-    setShowModal(!showModal);
-  };
+// Define the Blog interface for TypeScript
+interface Blog {
+  id: number;
+  group: "frontend" | "backend";
+  category: string;
+  title: string;
+  image: string;
+  description: string;
+}
 
-  const { title, description, image } = blog;
+const BackendBlogs = (blog: Blog) => {
+  const { title, description, image,  category, } = blog;
   return (
     <>
       <div className="box  bg-white shadow rounded-md p-2">
         <JackInTheBox>
           <Image
             className="rounded-t-md w-full h-[200px]"
-            height={200}
-            width={500}
+            height={230}
+            width={530}
             src={image}
             alt=""
           />
         </JackInTheBox>
         <div className="px-3 py-2">
+          <div className="flex items-center space-x-2 py-2">
           <h1 className="text-2xl pt-1">{title}</h1>
-          <p className="text-gray-500">{description.substring(0, 120)}</p>
+          <h1 className="text-xl pt-1 text-gray-500">{category}</h1>
+          </div>
+          <p className="text-gray-400">{description.substring(0, 255)}</p>
           <div className="flex justify-between pt-1 ">
             <div className="flex items-center">
               <div className="text-[#00BBA6]">Rating :</div>
