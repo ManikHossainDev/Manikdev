@@ -24,7 +24,7 @@ const TechOrbit = () => {
                 alt="MongoDB Logo"
                 width={45}
                 height={45}
-                className="animate-[spin_30s_linear_infinite]"
+                className="animate-[spin_30s_linear_infinite ]"
               />
             </div>
 

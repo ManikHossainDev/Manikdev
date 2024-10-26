@@ -3,7 +3,7 @@ import { TEducation } from '@/lib/types';
 export const educations: TEducation[] = [
   {
     degreeName: 'Full Stack Developer',
-    year: '01-05-2024 - Present',
+    year: '2024 - Present',
     institution: 'Universe Soft Tech',
     obtainedCgpa: 0,
     totalCgpa: 0,

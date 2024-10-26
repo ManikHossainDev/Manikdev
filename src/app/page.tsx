@@ -14,6 +14,7 @@ import Socialmedia from "./components/socialmedia";
 import { HeroSection } from "@/components/HeroSectionContact";
 import { AboutSection } from "./components/mytools";
 
+
 const HomePage: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -54,7 +55,7 @@ const HomePage: React.FC = () => {
                 <div className="md:flex items-center gap-5">
                   {/* Resume Button */}
                   <button className="flex items-center gap-2  mb-3 md:mb-0 lg:mb-0 bg-slate-300 hover:bg-slate-100 hover:text-[#00BBA6] transition-all ease-linear duration-150 rounded-md px-3 py-2 text-lg group">
-                    <span className=" group-hover:rotate-45 transform transition-all ease-linear duration-200">
+                    <span className=" group-hover:rotate-45  transform transition-all ease-linear duration-200">
                       <svg
                         fill="#00BBA6"
                         height="25px"
@@ -93,8 +94,8 @@ const HomePage: React.FC = () => {
                   {/* Let's Meet Button */}
                   <button className="flex items-center gap-2  transform transition-all ease-linear duration-200 hover:bg-[#7de4b9] hover:text-black bg-[#00BBA6] rounded-md px-3 py-2 text-white text-lg group">
                     <Link href="https://calendly.com/manikdev/30min" passHref>
-                      <span className="flex items-center gap-3">
-                        <span className="text-white group-hover:text-black transform transition-all ease-linear duration-200">
+                      <span className="flex items-center gap-3 ">
+                        <span className="text-white   group-hover:text-black transform transition-all ease-linear duration-200">
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -454,6 +455,7 @@ const HomePage: React.FC = () => {
         <HeroSection />
       </div>
       <div className="my-3"><AboutSection/></div>
+
     </div>
   );
 };
