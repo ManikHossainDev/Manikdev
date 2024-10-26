@@ -1,10 +1,20 @@
+"use client";
 import Link from "next/link";
+import { useRef } from "react";
 const Sidebar = () => {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const handlePlayAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  };
+
   return (
     <div className="sticky top-24   grid grid-cols-3 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-1  md:gap-1">
       <ul className="menu md:-mb-4 rounded-box flex ">
         <li className="md:mb-7">
-          <Link href="/dashboard">
+          <Link href="/dashboard" onClick={handlePlayAudio}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -23,7 +33,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className="md:mb-7">
-          <Link href="/dashboard/userinfo">
+          <Link href="/dashboard/userinfo" onClick={handlePlayAudio}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -42,7 +52,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className="md:pb-9">
-          <Link href="/dashboard/Course">
+          <Link href="/dashboard/Course" onClick={handlePlayAudio}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -66,6 +76,7 @@ const Sidebar = () => {
           <Link
             href="/dashboard/myblogs
           "
+            onClick={handlePlayAudio}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,6 +99,7 @@ const Sidebar = () => {
           <Link
             href="/dashboard/team
           "
+            onClick={handlePlayAudio}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +122,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className="md:pb-9">
-          <Link href="/dashboard/Certificate">
+          <Link href="/dashboard/Certificate" onClick={handlePlayAudio}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -149,7 +161,7 @@ const Sidebar = () => {
       </ul>
       <ul className="menu md:-mt-4 rounded-box">
         <li className="md:mb-7">
-          <Link href="/dashboard/bangladesh">
+          <Link href="/dashboard/bangladesh" onClick={handlePlayAudio}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -166,7 +178,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className="md:mb-7">
-          <Link href="/dashboard/settings">
+          <Link href="/dashboard/settings" onClick={handlePlayAudio}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -185,7 +197,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className="md:mb-9">
-          <Link href="/dashboard/gallery">
+          <Link href="/dashboard/gallery" onClick={handlePlayAudio}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -206,6 +218,7 @@ const Sidebar = () => {
           </Link>
         </li>
       </ul>
+      <audio ref={audioRef} src="/src_assets_clicksound.mp3" />
     </div>
   );
 };

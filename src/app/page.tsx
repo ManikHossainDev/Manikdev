@@ -13,6 +13,7 @@ import { useState } from "react";
 import Socialmedia from "./components/socialmedia";
 import { HeroSection } from "@/components/HeroSectionContact";
 import { AboutSection } from "./components/mytools";
+import LinkedInAudio from "@/components/LinkedInAudio";
 
 
 const HomePage: React.FC = () => {
@@ -32,7 +33,7 @@ const HomePage: React.FC = () => {
         <div className="md:col-span-6 pb-2 col-span-1 ">
           <div className="w-full h-full bg-white rounded-[16px] relative pb-20 md:pb-2">
             <div className="flex md:flex-col flex-col ml-5  space-y-3">
-              <div className="flex flex-col items-start space-y-2">
+              <div className="flex flex-col items-start space-y-2 ">
                 <Image
                   alt="person"
                   src="https://pbs.twimg.com/profile_images/1834214792417923072/3fxHzXGX_400x400.jpg"
@@ -42,8 +43,8 @@ const HomePage: React.FC = () => {
                   priority
                 />
                 <span className="md:text-3xl text-2xl font-[700] mt-10 md:mt-32 flex items-center gap-3 text-[#00BBA6]">
-                  <div className="h-1 w-10 bg-[#00BBA6] font-[400]" />
-                  I'm Manik
+                  <div className="flex items-center  h-1 w-10 bg-[#00BBA6] font-[400]" />
+                  I'm Manik <LinkedInAudio/>
                 </span>
                 <p className="text-3xl md:text-4xl font-semibold  pt-1">
                   <Typewriter />
