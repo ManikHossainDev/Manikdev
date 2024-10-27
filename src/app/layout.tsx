@@ -29,7 +29,7 @@ export default async function RootLayout({
       <body
         className={cn(
           font.className,
-          "flex min-h-screen flex-col bg-[#F5F2F2]"
+          "flex min-h-screen flex-col bg-[#F5F5F5]"
         )}
       >
         <Navbar session={session} />

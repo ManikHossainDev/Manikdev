@@ -56,6 +56,11 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
                 </Link>
               </li>
               <li>
+                <Link href="/services" onClick={() => setDropdownOpen(false)}>
+                  Service
+                </Link>
+              </li>
+              <li>
                 <Link href="/Projects" onClick={() => setDropdownOpen(false)}>
                   Projects
                 </Link>
@@ -80,10 +85,10 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
         </div>
 
         <Link href="/" className="btn btn-ghost text-xl">
-        <SectionTitle
-          title={"SeManik"}
-          subTitle={"Software Engineer"}
-        ></SectionTitle>
+          <SectionTitle
+            title={"SeManik"}
+            subTitle={"Software Engineer"}
+          ></SectionTitle>
         </Link>
       </div>
 
@@ -94,6 +99,11 @@ const Navbar = ({ session }: { session: UserProps | null }) => {
           </li>
           <li>
             <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/services" onClick={() => setDropdownOpen(false)}>
+              Service
+            </Link>
           </li>
           <li>
             <Link href="/Projects">Projects</Link>
