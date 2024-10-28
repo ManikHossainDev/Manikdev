@@ -20,7 +20,7 @@ const AboutPage = () => {
     <div className="mb-5 mx-2">
       <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-10 py-5 my-5">
         <div className="col-span-1 md:col-span-5 lg:col-span-4  space-y-4">
-          <div className="w-full h-auto bg-white   rounded-3xl py-5 px-4  md:px-10 relative group">
+          <div className="w-full h-auto bg-white overflow-hidden  rounded-3xl py-5 px-4  md:px-10 relative group">
             <div className="">
               {/* Use Next.js Image Component for Optimized Image Loading */}
               <TechOrbit />

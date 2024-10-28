@@ -15,16 +15,16 @@ const Photoskills = () => {
         PERN
       </div>
       <div className="absolute transform translate-x-[23vw] translate-y-[6vw]  font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
-        Words
+        Postgres
       </div>
       <div className="absolute transform translate-x-[0vw] translate-y-[11vw] flex items-center justify-center font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
       Testing
       </div>
       <div className="absolute transform translate-x-[-20vw] translate-y-[-15vw] flex items-center justify-center font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
-      PowerPoint
+      NodeJs
       </div>
       <div className="absolute transform translate-x-[15vw] translate-y-[-12vw] flex items-center justify-center font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
-      Excel
+      Mongodb
       </div>
       <div className="absolute transform translate-x-[-15vw] translate-y-[12vw] flex items-center justify-center font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
         Postman
@@ -33,19 +33,19 @@ const Photoskills = () => {
         Vscode
       </div>
       <div className="absolute transform translate-x-[-32vw] translate-y-[-5vw] flex items-center justify-center font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
-        Canvas
+        Sql
       </div>
       <div className="absolute transform translate-x-[0vw] translate-y-[-19vw] flex items-center justify-center font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
         Vercel
       </div>
       <div className="absolute transform translate-x-[25vw] translate-y-[-18vw] flex items-center justify-center font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
-        web 
+         NextJs
       </div>
       <div className="absolute transform translate-x-[-25vw] translate-y-[18vw] flex items-center justify-center font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
         Database
       </div>
       <div className="absolute transform translate-x-[15vw] translate-y-[16vw] flex items-center justify-center font-semibold rounded-full bg-[#00BBA6] text-light py-3 px-6 shadow-md cursor-pointer xs:text-xs">
-      windows
+      Windows
       </div>
     </div>
   );

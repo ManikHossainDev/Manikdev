@@ -57,8 +57,8 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
 
-      <div className="w-full h-100%">
-        <div className="flex flex-col items-center">
+      <div className="w-[80%] h-80% mx-auto">
+        <div className="flex flex-col items-center ">
           <Image
             src={memojiImage}
             className="size-[100px] -mb-2"

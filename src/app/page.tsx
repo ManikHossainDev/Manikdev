@@ -452,7 +452,7 @@ const HomePage: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="bg-white  w-full rounded-3xl my-5">
+      <div className="bg-white  w-full rounded-3xl my-5  overflow-hidden">
         <HeroSection />
       </div>
       <div className="my-3"><AboutSection/></div>

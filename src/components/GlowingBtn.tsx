@@ -3,20 +3,20 @@ import './glowingBtn.css'
 
 const GlowingBtn = () => {
     return (
-        <Link href="/dashboard" className='ml-16 '>
+        <Link href="/dashboard" className='md:ml-24'>
             <button className='glowing-btn'>
                 <span className='glowing-txt'>
-                    Mr
+                    M
                     <span className='faulty-letter'>
-                        M
+                        a
                     </span>
-                    an
+                    n
                     <span className='faulty-letter'>
                     ik   
                     </span>
                 </span>
                 <span className='glowing-txt'>
-                    &nbsp; &nbsp;H
+                     &nbsp;H
                     <span className='faulty-letter'>
                     o
                     </span>
