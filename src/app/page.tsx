@@ -199,7 +199,7 @@ const HomePage: React.FC = () => {
                         <p className="text-2xl font-semibold">Blogs </p>
                       </div>
                       <div className="absolute bottom-3 md:bottom-5 right-5 cursor-pointer opacity-55 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100 group">
-                        <Link href="/FrontBlog">
+                        <Link href="/Blogs">
                           <div className="flex items-center justify-center w-16 h-8 rounded-[16px] border border-black transition-all ease-linear duration-200">
                             <span className="flex items-center justify-center text-black group-hover:rotate-45 transition-all ease-linear duration-200">
                               <svg
