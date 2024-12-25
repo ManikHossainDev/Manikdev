@@ -53,9 +53,9 @@ const HomePage: React.FC = () => {
                   A MERN & PERN Stack Developer with a passion for creating
                   dynamic and user-friendly applications. Let’s grow together!!
                 </p>
-                <div className="md:flex items-center gap-5">
+                <div className="flex items-center gap-1 md:gap-5">
                   {/* Resume Button */}
-                  <button className="flex items-center gap-2  mb-3 md:mb-0 lg:mb-0 bg-slate-300 hover:bg-slate-100 hover:text-[#00BBA6] transition-all ease-linear duration-150 rounded-md px-3 py-2 text-lg group">
+                  <button className="flex items-center gap-2   bg-slate-300 hover:bg-slate-100 hover:text-[#00BBA6] transition-all ease-linear duration-150 rounded-md px-2 py-2 text-lg group">
                     <span className=" group-hover:rotate-45  transform transition-all ease-linear duration-200">
                       <svg
                         fill="#00BBA6"
@@ -93,9 +93,9 @@ const HomePage: React.FC = () => {
                   </button>
 
                   {/* Let's Meet Button */}
-                  <button className="flex items-center gap-2  transform transition-all ease-linear duration-200 hover:bg-[#7de4b9] hover:text-black bg-[#00BBA6] rounded-md px-3 py-2 text-white text-lg group">
+                  <button className="flex items-center gap-1  transform transition-all ease-linear duration-200 hover:bg-[#7de4b9] hover:text-black bg-[#00BBA6] rounded-md px-2 py-2 text-white text-lg group">
                     <Link href="https://calendly.com/manikdev/30min" passHref>
-                      <span className="flex items-center gap-3 ">
+                      <span className="flex items-center gap-1">
                         <span className="text-white   group-hover:text-black transform transition-all ease-linear duration-200">
                           <svg
                             stroke="currentColor"

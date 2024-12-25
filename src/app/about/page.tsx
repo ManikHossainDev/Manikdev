@@ -6,11 +6,9 @@ import { Skills } from "./_components/skills";
 import { Education } from "./_components/education";
 import Download from "./_components/download";
 import Account from "../Contact/components/account";
-import { motion } from "framer-motion";
 import MyComponent from "./_components/abouttext";
 import TechOrbit from "@/components/shared/TechOrbit";
 import SectionTitle from "./_components/titele";
-import Photoskills from "../services/components/photoskills";
 export const metadata: Metadata = {
   title: "Manik | About",
   description: "this is about to be published to the public domain",

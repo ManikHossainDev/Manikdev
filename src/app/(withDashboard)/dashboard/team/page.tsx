@@ -29,7 +29,7 @@ const Page = () => {
 
         {/* Team Section */}
         <div className="backdrop-blur-md bg-opacity-10 p-10 rounded-3xl shadow-xl mb-16">
-          <h2 className="text-3xl font-bold text-[#00BBA6] mb-6">
+          <h2 className="text-center text-3xl font-bold text-[#00BBA6] mb-6">
             Meet the Team
           </h2>
           <div>

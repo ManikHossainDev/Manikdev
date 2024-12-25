@@ -8,7 +8,7 @@ import { Metadata } from "next";
 const bangladeshPage = () => {
   return (
     <div>
-      <div className="text-center text-5xl -mb-14">
+      <div className="text-center text-2xl md:text-5xl -mb-14">
         Bangladesh
       </div>
       <div>

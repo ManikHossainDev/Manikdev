@@ -28,7 +28,6 @@ const LoginPage = () => {
   const router = useRouter();
 
   const onSubmit = async (data: FormValues) => {
-    // console.log(data);
     try {
       const res = await loginUser(data);
       if (res.success) {
