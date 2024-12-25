@@ -188,10 +188,10 @@ const Profile = () => {
       <div className="relative space-y-4">
         <h2 className="font-semibold md:mt-4 mt-8">Get In Touch</h2>
         <div className="flex flex-wrap justify-center gap-3 ">
-          <Link href="https://github.com/Programmer-Manik">
+          <Link href="https://github.com/ManikHossainDev">
             <SiGithub className="text-lg"></SiGithub>
           </Link>
-          <Link href="https://www.linkedin.com/in/devmanik/">
+          <Link href="https://www.linkedin.com/in/manikdev/">
             <SiLinkedin className="text-lg"></SiLinkedin>
           </Link>
           <Link href="https://www.facebook.com/profile.php?id=100082862521278">

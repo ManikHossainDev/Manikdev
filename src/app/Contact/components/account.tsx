@@ -6,7 +6,7 @@ const Account = () => {
     <div className="flex justify-center rounded-3xl items-center space-x-5">
       <Fade direction="left">
         <Link
-          href="https://www.linkedin.com/in/devmanik/"
+          href="https://www.linkedin.com/in/manikdev/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -28,7 +28,7 @@ const Account = () => {
       {/* GitHub */}
       <Fade direction="left">
         <Link
-          href="https://github.com/Programmer-Manik"
+          href="https://github.com/ManikHossainDev"
           target="_blank"
           rel="noopener noreferrer"
         >

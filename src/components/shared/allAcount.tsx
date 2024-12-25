@@ -57,14 +57,14 @@ const AllModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           {/* Social Media Buttons */}
           <div className="grid grid-cols-2 gap-4 ml-5">
             <Link
-              href="https://github.com/Programmer-Manik"
+              href="https://github.com/ManikHossainDev"
               target="_blank"
               className="flex items-center text-gray-700 hover:text-gray-900"
             >
               <FaGithub className="mr-2" /> GitHub
             </Link>
             <Link
-              href="https://www.linkedin.com/in/devmanik/"
+              href="https://www.linkedin.com/in/manikdev/"
               target="_blank"
               className="flex items-center text-blue-700 hover:text-blue-900"
             >

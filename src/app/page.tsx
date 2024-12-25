@@ -15,7 +15,6 @@ import { HeroSection } from "@/components/HeroSectionContact";
 import { AboutSection } from "./components/mytools";
 import LinkedInAudio from "@/components/LinkedInAudio";
 
-
 const HomePage: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -44,7 +43,7 @@ const HomePage: React.FC = () => {
                 />
                 <span className="md:text-3xl text-2xl font-[700] mt-10 md:mt-32 flex items-center gap-3 text-[#00BBA6]">
                   <div className="flex items-center  h-1 w-10 bg-[#00BBA6] font-[400]" />
-                  I'm Manik <LinkedInAudio/>
+                  I'm Manik <LinkedInAudio />
                 </span>
                 <p className="text-3xl md:text-4xl font-semibold  pt-1">
                   <Typewriter />
@@ -229,7 +228,7 @@ const HomePage: React.FC = () => {
                   <div className="py-10 group bg-white rounded-[16px]  px-6 relative group w-full h-full">
                     <div className="flex justify-center  rounded-3xl  md:p-5 p-1 items-center space-x-2 ">
                       <Link
-                        href="https://www.linkedin.com/in/devmanik/"
+                        href="https://www.linkedin.com/in/manikdev/"
                         passHref
                       >
                         <div className="p-3 rounded-[12px] hover:border-primary-color cursor-pointer transition ease-linear duration-200 delay-100 font-medium text-white bg-[#2563EB]">
@@ -247,7 +246,7 @@ const HomePage: React.FC = () => {
                         </div>
                       </Link>
 
-                      <Link href="https://github.com/Programmer-Manik" passHref>
+                      <Link href="https://github.com/ManikHossainDev" passHref>
                         <div className="p-3 rounded-[12px] hover:border-primary-color cursor-pointer transition ease-linear duration-200 delay-100 font-medium text-white bg-black">
                           <svg
                             stroke="currentColor"
@@ -455,8 +454,9 @@ const HomePage: React.FC = () => {
       <div className="bg-white  w-full rounded-3xl my-5  overflow-hidden">
         <HeroSection />
       </div>
-      <div className="my-3"><AboutSection/></div>
-
+      <div className="my-3">
+        <AboutSection />
+      </div>
     </div>
   );
 };
